@@ -1,0 +1,4557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woman Mastery HQ , Membership</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --deep-red: #660810;
+  --dark-red: #270707;
+  --mid-red: #4B0000;
+  --bright-red: #8D0004;
+  --stone: #f1ebeb;
+  --off-white: #f2f2f2;
+  --ink: #1a0a0a;
+  --ink-light: #3d1a1a;
+  --muted: #7a5a5a;
+  --border: rgba(102,8,16,0.15);
+  --border-strong: rgba(102,8,16,0.3);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--off-white);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--dark-red);
+  padding: 0 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky; /* keep sticky */
+  isolation: isolate;
+}
+.nav-logo {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+.nav-cta {
+  display: inline-block;
+  padding: 10px 24px;
+  background: var(--bright-red);
+  color: var(--stone);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--deep-red); }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-link {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(241,235,235,0.38);
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 100px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.nav-link:hover { color: rgba(241,235,235,0.7); }
+.nav-link.active {
+  color: var(--stone);
+  background: rgba(241,235,235,0.1);
+}
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+}
+
+/* SECTIONS */
+section { width: 100%; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.container-wide {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* HERO */
+.hero {
+  background: var(--dark-red);
+  padding: 100px 40px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 79px,
+    rgba(241,235,235,0.03) 80px
+  );
+  pointer-events: none;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(241,235,235,0.6);
+  margin-bottom: 28px;
+  padding: 8px 20px;
+  border: 1px solid rgba(241,235,235,0.2);
+}
+.hero h1 {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.08;
+  color: var(--stone);
+  max-width: 820px;
+  margin: 0 auto 24px;
+  letter-spacing: -0.02em;
+}
+.hero h1 em {
+  font-style: normal;
+  color: #F2C6D0;
+}
+.hero-sub {
+  font-size: clamp(16px, 2vw, 19px);
+  color: rgba(241,235,235,0.72);
+  max-width: 680px;
+  margin: 0 auto 44px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  display: inline-block;
+  padding: 18px 44px;
+  background: var(--stone);
+  color: var(--dark-red);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+.btn-primary:hover { background: #fff; }
+.btn-ghost {
+  display: inline-block;
+  padding: 18px 36px;
+  background: transparent;
+  color: rgba(241,235,235,0.7);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgba(241,235,235,0.25);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-ghost:hover { border-color: rgba(241,235,235,0.6); color: var(--stone); }
+.hero-note {
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgba(241,235,235,0.4);
+  letter-spacing: 0.05em;
+}
+
+/* TRUST BAR */
+.trust-bar {
+  background: var(--mid-red);
+  padding: 16px 40px;
+}
+.trust-bar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+.trust-item {
+  padding: 6px 24px;
+  border-right: 1px solid rgba(241,235,235,0.15);
+  text-align: center;
+  flex-shrink: 1;
+  white-space: nowrap;
+}
+.trust-item:last-child { border-right: none; }
+.trust-num {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--stone);
+  line-height: 1;
+}
+.trust-label {
+  display: block;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(241,235,235,0.5);
+  margin-top: 4px;
+}
+
+/* PROBLEM SECTION */
+.problem-section {
+  background: var(--off-white);
+  padding: 100px 40px;
+}
+.section-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--deep-red);
+  margin-bottom: 20px;
+}
+.section-h2 {
+  font-size: clamp(28px, 3.5vw, 46px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+.section-h2 em {
+  font-style: normal;
+  color: var(--deep-red);
+}
+.lead-text {
+  font-size: 17px;
+  color: var(--ink-light);
+  line-height: 1.75;
+  max-width: 620px;
+  margin-bottom: 48px;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--border);
+}
+.problem-card {
+  background: var(--off-white);
+  padding: 36px 32px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.problem-card.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.problem-card::before {
+  content: '';
+  position: absolute;
+  top: 36px;
+  left: 32px;
+  width: 24px;
+  height: 3px;
+  background: var(--deep-red);
+}
+.problem-card-text {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink-light);
+  margin-top: 24px;
+  font-weight: 400;
+}
+.problem-card strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* QUOTE BREAK */
+.quote-break {
+  background: var(--deep-red);
+  padding: 80px 40px;
+  text-align: center;
+}
+.quote-break blockquote {
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--stone);
+  max-width: 760px;
+  margin: 0 auto 24px;
+  letter-spacing: -0.01em;
+}
+.quote-break blockquote em {
+  font-style: normal;
+  color: #F2C6D0;
+}
+.quote-attr {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(241,235,235,0.45);
+}
+
+/* TRANSFORMATION TIMELINE */
+.transform-section {
+  background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147575052/images/1b5fe0d-73b7-4fd2-2255-ed638054733_Kajabi_Website_4_.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 40px;
+  position: relative;
+}
+.transform-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 4, 4, 0.58);
+  pointer-events: none;
+}
+.transform-section .container { position: relative; z-index: 1; }
+.transform-section .section-eyebrow { color: rgba(241,235,235,0.5); }
+.transform-section .section-h2 { color: var(--stone); }
+.transform-section .section-h2 em { color: #F2C6D0; }
+.timeline {
+  margin-top: 60px;
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(241,235,235,0.2);
+}
+.timeline-item {
+  padding-left: 48px;
+  padding-bottom: 60px;
+  position: relative;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-card {
+  background: rgba(20, 4, 4, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(241,235,235,0.1);
+  border-radius: 16px;
+  padding: 32px 36px;
+  margin-top: 16px;
+}
+.timeline-dot {
+  position: absolute;
+  left: -14px;
+  top: 2px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F2C6D0;
+  font-size: 22px;
+  line-height: 1;
+  background: transparent;
+}
+@keyframes tagPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(242,198,208,0.35); }
+  50% { box-shadow: 0 0 0 8px rgba(242,198,208,0); }
+}
+.timeline-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #3D0A10;
+  background: #F2C6D0;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 14px;
+  border: none;
+  animation: tagPulse 2.4s ease-in-out infinite;
+}
+.timeline-h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+.timeline-p {
+  font-size: 16px;
+  color: rgba(241,235,235,0.85);
+  line-height: 1.75;
+  max-width: 600px;
+}
+.timeline-p.lead {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(241,235,235,0.95);
+  line-height: 1.6;
+}
+.timeline-p.accent {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(241,235,235,0.95);
+  line-height: 1.6;
+}
+.timeline-win {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #F2C6D0;
+  line-height: 1.5;
+}
+.timeline-win::before {
+  content: '';
+  width: 24px;
+  height: 2px;
+  background: #F2C6D0;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+.timeline-bullets {
+  list-style: none;
+  margin: 14px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.timeline-bullets li {
+  font-size: 14px;
+  color: rgba(241,235,235,0.75);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.6;
+}
+.timeline-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 1px;
+  background: rgba(241,235,235,0.35);
+}
+
+/* PILLARS */
+.pillars-section {
+  background: var(--dark-red);
+  padding: 100px 40px;
+}
+.pillars-section .section-eyebrow { color: rgba(241,235,235,0.5); }
+.pillars-section .section-h2 { color: var(--stone); }
+.pillars-section .section-h2 em { color: #F2C6D0; }
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  background: rgba(241,235,235,0.1);
+  margin-top: 56px;
+}
+.pillar-card {
+  background: var(--dark-red);
+  padding: 36px 28px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.pillar-card.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.pillar-num {
+  font-size: 48px;
+  font-weight: 800;
+  color: rgba(241,235,235,0.1);
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.pillar-name {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F2C6D0;
+  margin-bottom: 12px;
+}
+.pillar-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--stone);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.pillar-desc {
+  font-size: 14px;
+  color: rgba(241,235,235,0.6);
+  line-height: 1.65;
+}
+
+/* WHAT'S INSIDE */
+.inside-section {
+  background: var(--off-white);
+  padding: 100px 40px;
+}
+.inside-section .section-eyebrow { color: var(--deep-red); }
+.inside-section .section-h2 { color: var(--ink); }
+.inside-section .section-h2 em { color: var(--deep-red); }
+.inside-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+  margin-top: 56px;
+}
+.inside-card {
+  perspective: 900px;
+  min-height: 260px;
+}
+.inside-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.inside-card.flipped .inside-card-inner {
+  transform: rotateY(180deg);
+}
+.inside-card-front,
+.inside-card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 16px;
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.inside-card-front {
+  background: #fff;
+  border: 1px solid var(--border);
+}
+.inside-card-back {
+  background: #3D0A10;
+  border: 1px solid rgba(241,235,235,0.08);
+  transform: rotateY(180deg);
+  justify-content: center;
+  align-items: flex-start;
+}
+.inside-card-back .inside-card-tag {
+  color: #F2C6D0;
+  background: rgba(242,198,208,0.12);
+}
+.inside-card-back .inside-card-title {
+  color: var(--stone);
+}
+.inside-card-back .inside-card-desc {
+  color: rgba(241,235,235,0.7);
+}
+
+.inside-card-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--deep-red);
+  background: rgba(102,8,16,0.07);
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+.inside-card-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+.inside-card-desc {
+  font-size: 14px;
+  color: var(--ink-light);
+  line-height: 1.7;
+  flex: 1;
+}
+.inside-card-list {
+  list-style: none;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.inside-card-list li {
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+.inside-card-list li::before {
+  content: '→';
+  color: var(--deep-red);
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 12px;
+  margin-top: 1px;
+}
+.inside-card-full {
+  grid-column: 1 / -1;
+  background: var(--dark-red);
+  border: 1px solid rgba(241,235,235,0.1);
+  border-radius: 16px;
+  padding: 48px 52px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 52px;
+  align-items: center;
+}
+.inside-card-full .inside-card-tag { color: rgba(241,235,235,0.5); background: rgba(241,235,235,0.08); }
+.inside-card-full .inside-card-title { color: var(--stone); font-size: 26px; }
+.inside-card-full .inside-card-desc { color: rgba(241,235,235,0.7); font-size: 15px; }
+.inside-card-full-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.inside-card-full-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 14px;
+  color: rgba(241,235,235,0.75);
+  line-height: 1.6;
+}
+.inside-card-full-list li::before {
+  content: '→';
+  color: #F2C6D0;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* VALUE STACK */
+.value-section {
+  background: #fff;
+  padding: 100px 40px;
+}
+.value-list {
+  margin-top: 56px;
+}
+.value-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+  gap: 24px;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.value-row:first-child { border-top: 1px solid var(--border); }
+.value-row.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.value-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  flex: 1;
+}
+.value-name span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.value-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--muted);
+  text-decoration: line-through;
+  white-space: nowrap;
+}
+.value-total {
+  padding: 28px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.value-total.revealed { opacity: 1; transform: translateY(0); }
+.value-total-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.value-total-num {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--deep-red);
+}
+.value-you-pay {
+  background: var(--deep-red);
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease 0.12s, transform 0.5s ease 0.12s;
+}
+.value-you-pay.revealed { opacity: 1; transform: translateY(0); }
+.value-you-pay-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(241,235,235,0.6);
+}
+.value-you-pay-price {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--stone);
+}
+.value-you-pay-price span {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(241,235,235,0.6);
+}
+
+/* TESTIMONIALS */
+.testimonials-section {
+  background: var(--off-white);
+  padding: 100px 40px;
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+  background: var(--border);
+  margin-top: 56px;
+}
+.testimonial-card {
+  background: var(--off-white);
+  padding: 36px 32px;
+}
+@keyframes resultPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(242,198,208,0.5); }
+  50% { box-shadow: 0 0 0 7px rgba(242,198,208,0); }
+}
+.testimonial-result {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--deep-red);
+  background: rgba(242,198,208,0.4);
+  padding: 5px 12px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  animation: resultPulse 2.6s ease-in-out infinite;
+}
+.testimonial-quote {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-light);
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.testimonial-author {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* PRICING */
+.pricing-section {
+  background: var(--off-white);
+  padding: 100px 40px;
+  text-align: center;
+}
+.pricing-section .section-eyebrow { color: var(--deep-red); }
+.pricing-section .section-h2 { color: var(--ink); }
+.pricing-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 860px;
+  margin: 56px auto 0;
+  text-align: left;
+  align-items: start;
+}
+.pricing-card {
+  background: #3D0A10;
+  border-radius: 24px;
+  padding: 52px 44px;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  border: 1px solid rgba(241,235,235,0.1);
+  pointer-events: none;
+}
+.pricing-card::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(141,0,4,0.5) 0%, transparent 70%);
+  pointer-events: none;
+}
+.pricing-card.featured {
+  background: #3D0A10;
+  border-radius: 24px;
+  box-shadow: 0 32px 80px rgba(39,7,7,0.3), 0 8px 24px rgba(39,7,7,0.2), 0 0 0 1px rgba(241,235,235,0.1);
+}
+.pricing-card.featured::before {
+  background: radial-gradient(circle, rgba(141,0,4,0.4) 0%, transparent 70%);
+}
+.pricing-card.featured::after { border-color: rgba(241,235,235,0.1); }
+.pricing-term-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(241,235,235,0.5);
+  margin-bottom: 20px;
+  display: block;
+}
+.pricing-best-value {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #F2C6D0;
+  color: #3D0A10;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 100px;
+}
+.pricing-card-price {
+  font-size: 72px;
+  font-weight: 800;
+  color: var(--stone);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+}
+.pricing-card.featured .pricing-card-price { color: var(--stone); }
+.pricing-card-price sup {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 14px;
+  letter-spacing: 0;
+  opacity: 0.7;
+}
+.pricing-card-term {
+  font-size: 13px;
+  color: rgba(241,235,235,0.4);
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+.pricing-card.featured .pricing-card-term { color: rgba(241,235,235,0.4); }
+.pricing-card-saving {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(242,198,208,0.8);
+  margin-bottom: 36px;
+}
+.pricing-card.featured .pricing-card-saving { color: rgba(242,198,208,0.8); }
+.pricing-divider {
+  height: 1px;
+  background: rgba(241,235,235,0.1);
+  margin-bottom: 32px;
+}
+.pricing-card.featured .pricing-divider { background: rgba(241,235,235,0.1); }
+.pricing-card ul {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.pricing-card ul li {
+  font-size: 14px;
+  color: rgba(241,235,235,0.7);
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(241,235,235,0.06);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+.pricing-card ul li:last-child { border-bottom: none; }
+.pricing-card ul li .tick {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: rgba(242,198,208,0.12);
+  border: 1px solid rgba(242,198,208,0.25);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+  font-size: 10px;
+  color: #F2C6D0;
+}
+.pricing-card.featured ul li { color: rgba(241,235,235,0.7); border-bottom-color: rgba(241,235,235,0.06); }
+.pricing-card.featured ul li .tick {
+  background: rgba(242,198,208,0.12);
+  border-color: rgba(242,198,208,0.25);
+  color: #F2C6D0;
+}
+.btn-pricing {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  background: #F2C6D0;
+  color: #3D0A10;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  transition: all 0.25s;
+}
+.btn-pricing:hover { background: #f7d4dc; box-shadow: 0 6px 24px rgba(242,198,208,0.3); }
+.pricing-card.featured .btn-pricing {
+  background: #F2C6D0;
+  color: #3D0A10;
+  box-shadow: 0 4px 20px rgba(242,198,208,0.2);
+}
+.pricing-card.featured .btn-pricing:hover {
+  background: #f7d4dc;
+  box-shadow: 0 6px 28px rgba(242,198,208,0.35);
+}
+.pricing-bonus {
+  background: rgba(242,198,208,0.1);
+  border: 1px solid rgba(242,198,208,0.3);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.pricing-bonus-label {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #F2C6D0;
+  background: rgba(242,198,208,0.15);
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(242,198,208,0.2);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.pricing-bonus-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(241,235,235,0.85);
+  line-height: 1.4;
+}
+.pricing-note {
+  margin-top: 28px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* GUARANTEE */
+.guarantee-section {
+  background: #3D0A10;
+  padding: 80px 40px;
+}
+.guarantee-box {
+  max-width: 860px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.guarantee-icon-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.guarantee-icon-diamond {
+  width: 52px;
+  height: 52px;
+  background: rgba(242,198,208,0.1);
+  border: 1px solid rgba(242,198,208,0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #F2C6D0;
+  flex-shrink: 0;
+}
+.guarantee-icon-line {
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(242,198,208,0.25), transparent);
+  margin-top: 12px;
+}
+.guarantee-eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F2C6D0;
+  margin-bottom: 14px;
+  display: block;
+  min-height: 1.2em;
+}
+.guarantee-eyebrow::after {
+  content: '|';
+  opacity: 0;
+  font-weight: 300;
+  animation: none;
+}
+.guarantee-eyebrow.typing::after { opacity: 1; animation: blink 0.7s step-end infinite; }
+.guarantee-eyebrow.done::after { opacity: 1; animation: blink 0.7s step-end infinite; }
+.guarantee-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--stone);
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.guarantee-text {
+  font-size: 16px;
+  color: rgba(241,235,235,0.92);
+  line-height: 1.85;
+  text-wrap: pretty;
+  max-width: 600px;
+}
+
+/* WHO IT'S FOR */
+.for-section {
+  background: var(--dark-red);
+  padding: 100px 40px;
+}
+.for-section .section-eyebrow { color: rgba(241,235,235,0.45); }
+.for-section .section-h2 { color: var(--stone); }
+.for-tile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: rgba(241,235,235,0.06);
+  margin-top: 48px;
+}
+.for-tile {
+  background: var(--dark-red);
+  padding: 28px 32px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+.for-tile-icon {
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.for-tile-icon.yes { color: #F2C6D0; }
+.for-tile-icon.no { color: rgba(241,235,235,0.25); }
+.for-tile-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--stone);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+.for-tile-body {
+  font-size: 14px;
+  color: rgba(241,235,235,0.55);
+  line-height: 1.65;
+}
+
+/* NOT FOR YOU */
+.for-section-no {
+  background: #1e0608;
+  padding: 80px 40px;
+}
+.for-section-no .section-eyebrow { color: rgba(241,235,235,0.35); }
+.for-section-no .section-h2 { color: var(--stone); }
+
+/* JESS BIO */
+.bio-section {
+  background: var(--deep-red);
+  padding: 100px 40px;
+}
+.bio-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: start;
+}
+.bio-img-placeholder {
+  aspect-ratio: 3/4;
+  background: rgba(241,235,235,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(241,235,235,0.3);
+}
+.bio-content .section-eyebrow { color: rgba(241,235,235,0.5); }
+.bio-content h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--stone);
+  margin-bottom: 24px;
+  line-height: 1.15;
+}
+.bio-content p {
+  font-size: 15px;
+  color: rgba(241,235,235,0.72);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.bio-content p strong {
+  color: var(--stone);
+  font-weight: 600;
+}
+.bio-socials {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 32px;
+}
+.bio-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(241,235,235,0.2);
+  color: rgba(241,235,235,0.6);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.bio-social-link:hover {
+  border-color: #F2C6D0;
+  color: #F2C6D0;
+  background: rgba(242,198,208,0.08);
+}
+
+/* URGENCY */
+.urgency-section {
+  background: #F2C6D0;
+  padding: 80px 40px;
+}
+.urgency-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.urgency-left {
+  border-right: 1px solid rgba(61,10,16,0.15);
+  padding-right: 60px;
+}
+.urgency-label {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #3D0A10;
+  margin-bottom: 16px;
+  display: block;
+  line-height: 1;
+  min-height: 1.2em;
+}
+.urgency-label::after {
+  content: '|';
+  animation: blink 0.7s step-end infinite;
+  opacity: 0;
+  font-weight: 300;
+}
+.urgency-label.typing::after { opacity: 1; }
+.urgency-label.done::after { opacity: 1; animation: blink 0.7s step-end infinite; }
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.urgency-headline {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(61,10,16,0.65);
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+.urgency-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.urgency-sub {
+  font-size: 18px;
+  font-weight: 800;
+  color: #3D0A10;
+  line-height: 1.45;
+  text-wrap: pretty;
+  margin: 0;
+}
+.urgency-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.urgency-checklist span {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(61,10,16,0.55);
+}
+@media (max-width: 768px) {
+  .urgency-inner { grid-template-columns: 1fr; gap: 32px; }
+  .urgency-left { border-right: none; padding-right: 0; border-bottom: 1px solid rgba(61,10,16,0.15); padding-bottom: 32px; }
+}
+
+/* FAQ */
+.faq-section {
+  background: #fff;
+  padding: 100px 40px;
+}
+.faq-list {
+  max-width: 680px;
+  margin: 56px auto 0;
+}
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+.faq-item:first-child { border-top: 1px solid var(--border); }
+.faq-toggle {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 22px 0; font-family: 'DM Sans', sans-serif;
+  font-size: 16px; font-weight: 700; color: var(--ink);
+  text-align: left; gap: 16px; transition: color 0.15s;
+}
+.faq-toggle:hover { color: var(--deep-red); }
+.faq-toggle[aria-expanded="true"] { color: var(--deep-red); }
+.faq-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--deep-red);
+  font-size: 12px;
+  transition: transform 0.25s ease;
+}
+.faq-toggle[aria-expanded="true"] .faq-icon {
+  transform: rotate(180deg);
+}
+.faq-body {
+  overflow: hidden; max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.faq-body.open { max-height: 600px; }
+.faq-a {
+  font-size: 15px; color: var(--ink-light);
+  line-height: 1.75; padding-bottom: 22px;
+}
+
+/* FINAL CTA */
+.final-cta {
+  background: var(--dark-red);
+  padding: 120px 40px;
+  text-align: center;
+}
+.final-cta h2 {
+  font-size: clamp(32px, 4.5vw, 60px);
+  font-weight: 800;
+  color: var(--stone);
+  line-height: 1.1;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  letter-spacing: -0.02em;
+}
+.final-cta h2 em {
+  font-style: normal;
+  color: #F2C6D0;
+}
+.final-cta p {
+  font-size: 17px;
+  color: rgba(241,235,235,0.6);
+  max-width: 460px;
+  margin: 0 auto 44px;
+}
+
+/* FOOTER */
+footer {
+  background: #0f0303;
+  padding: 40px;
+  text-align: center;
+}
+footer p {
+  font-size: 11px;
+  color: rgba(241,235,235,0.25);
+  letter-spacing: 0.08em;
+}
+footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  .hero, .problem-section, .quote-break, .transform-section,
+  .pillars-section, .inside-section, .value-section, .testimonials-section,
+  .pricing-section, .guarantee-section, .for-section, .bio-section,
+  .urgency-section, .faq-section, .final-cta { padding: 72px 20px; }
+  .container, .container-wide { padding: 0 20px; }
+  .problem-grid, .pillar-grid, .testimonial-grid,
+  .pricing-cards, .inside-grid, .for-no-grid, .for-tile-grid { grid-template-columns: 1fr; }
+  .inside-card-full { grid-template-columns: 1fr; gap: 28px; padding: 32px 24px; }
+  .for-grid, .bio-inner { grid-template-columns: 1fr; gap: 40px; }
+  .trust-item { padding: 8px 16px; }
+  .guarantee-box { grid-template-columns: 1fr; gap: 20px; padding: 0; }
+  .guarantee-icon-col { flex-direction: row; gap: 12px; }
+  .guarantee-icon-line { display: none; }
+  .value-you-pay { flex-direction: column; gap: 8px; text-align: center; }
+  .transform-section { background-attachment: scroll; }
+}
+/* CAROUSEL */
+.carousel-section {
+  background: var(--dark-red);
+  padding: 0;
+  overflow: hidden;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+}
+.carousel-img-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--dark-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(241,235,235,0.2);
+}
+.carousel-slide img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 40px 28px;
+  background: var(--dark-red);
+}
+.carousel-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(241,235,235,0.2);
+  background: transparent;
+  color: rgba(241,235,235,0.6);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.carousel-btn:hover {
+  border-color: rgba(241,235,235,0.5);
+  color: var(--stone);
+}
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(241,235,235,0.2);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+}
+.carousel-dot.active {
+  background: #F2C6D0;
+  width: 20px;
+  border-radius: 3px;
+}
+@media (max-width: 768px) {
+  .carousel-controls { padding: 16px 20px 24px; }
+  .carousel-img-placeholder { aspect-ratio: 4 / 3; }
+  .carousel-slide img { aspect-ratio: 4 / 3; }
+}
+/* SOCIAL PROOF TOAST */
+@keyframes toastIn {
+  0% { transform: translateX(-110%); opacity: 0; }
+  12% { transform: translateX(0); opacity: 1; }
+  80% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(-110%); opacity: 0; }
+}
+#socialToast {
+  position: fixed;
+  bottom: 28px;
+  left: 24px;
+  z-index: 9999;
+  background: #fff;
+  border-left: 3px solid #F2C6D0;
+  border-radius: 10px;
+  padding: 12px 16px 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 32px rgba(39,7,7,0.18), 0 2px 8px rgba(39,7,7,0.1);
+  max-width: 260px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(-110%);
+  will-change: transform, opacity;
+}
+#socialToast.show {
+  animation: toastIn 3.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.toast-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #F2C6D0, #3D0A10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+}
+.toast-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.toast-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a0a0a;
+  font-family: 'DM Sans', sans-serif;
+}
+.toast-action {
+  font-size: 11px;
+  color: #7a5a5a;
+  font-family: 'DM Sans', sans-serif;
+}
+.toast-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #F2C6D0;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+@media (max-width: 480px) {
+  #socialToast { max-width: 220px; bottom: 20px; left: 16px; }
+}
+/* BOT NUDGE BUBBLE */
+@keyframes nudgeIn {
+  0% { opacity: 0; transform: scale(0.85) translateY(6px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+@keyframes nudgeOut {
+  0% { opacity: 1; transform: scale(1) translateY(0); }
+  100% { opacity: 0; transform: scale(0.85) translateY(6px); }
+}
+#botNudge {
+  position: absolute;
+  bottom: 68px;
+  right: 0;
+  background: #fff;
+  border-radius: 14px 14px 2px 14px;
+  padding: 9px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3D0A10;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(39,7,7,0.18);
+  pointer-events: none;
+  opacity: 0;
+  font-family: 'DM Sans', sans-serif;
+  border: 1px solid rgba(242,198,208,0.4);
+}
+#botNudge::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 18px;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-right: 1px solid rgba(242,198,208,0.4);
+  border-bottom: 1px solid rgba(242,198,208,0.4);
+  transform: rotate(45deg);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+#botNudge.show { animation: nudgeIn 0.3s ease forwards; }
+#botNudge.hide { animation: nudgeOut 0.3s ease forwards; }
+#jpBot { position: fixed; bottom: 28px; right: 24px; z-index: 9998; font-family: 'DM Sans', sans-serif; }
+#jpBotToggle {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: #3D0A10; border: 2px solid #F2C6D0;
+  cursor: pointer; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 3px;
+  box-shadow: 0 4px 20px rgba(39,7,7,0.35);
+  transition: transform 0.2s;
+}
+#jpBotToggle:hover { transform: scale(1.06); }
+#jpBotToggle span {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.12em;
+  color: #F2C6D0; text-transform: uppercase; line-height: 1;
+}
+#jpBotToggle .bot-icon { font-size: 22px; line-height: 1; display: flex; align-items: center; justify-content: center; }
+#jpBotWindow {
+  position: absolute; bottom: 76px; right: 0;
+  width: 360px; background: #fff;
+  border-radius: 20px; overflow: hidden;
+  box-shadow: 0 16px 60px rgba(39,7,7,0.2), 0 4px 16px rgba(39,7,7,0.12);
+  display: none; flex-direction: column;
+  max-height: 540px;
+}
+#jpBotWindow.open { display: flex; }
+.bot-header {
+  background: #3D0A10; padding: 16px 18px;
+  display: flex; align-items: center; gap: 10px;
+}
+.bot-header-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: linear-gradient(135deg, #F2C6D0, #660810);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; flex-shrink: 0;
+}
+.bot-header-text { flex: 1; }
+.bot-header-name {
+  font-size: 13px; font-weight: 800; color: var(--stone);
+  display: block; line-height: 1.2;
+}
+.bot-header-status {
+  font-size: 10px; color: rgba(241,235,235,0.5);
+  display: flex; align-items: center; gap: 5px;
+}
+.bot-status-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #7fe09a; flex-shrink: 0;
+}
+.bot-close {
+  background: none; border: none; cursor: pointer;
+  color: rgba(241,235,235,0.5); font-size: 18px; line-height: 1;
+  padding: 2px 4px;
+}
+.bot-close:hover { color: var(--stone); }
+.bot-messages {
+  flex: 1; overflow-y: auto; padding: 16px;
+  display: flex; flex-direction: column; gap: 10px;
+  max-height: 300px;
+  scroll-behavior: smooth;
+}
+.bot-messages::-webkit-scrollbar { width: 4px; }
+.bot-messages::-webkit-scrollbar-track { background: transparent; }
+.bot-messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+.bot-bubble {
+  padding: 10px 14px; border-radius: 14px;
+  font-size: 13px; line-height: 1.55; max-width: 86%;
+}
+.bot-bubble.bot {
+  background: #f4eeee; color: #1a0a0a;
+  border-bottom-left-radius: 4px; align-self: flex-start;
+}
+.bot-bubble.user {
+  background: #3D0A10; color: var(--stone);
+  border-bottom-right-radius: 4px; align-self: flex-end;
+}
+.bot-qs {
+  padding: 12px 14px 16px;
+  display: flex; flex-direction: column; gap: 6px;
+  border-top: 1px solid rgba(102,8,16,0.1);
+  overflow-y: auto; max-height: 180px;
+}
+.bot-qs-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 4px;
+}
+.bot-q-btn {
+  background: transparent; border: 1px solid rgba(102,8,16,0.15);
+  border-radius: 20px; padding: 8px 14px;
+  font-size: 12px; font-weight: 600; color: #3D0A10;
+  cursor: pointer; text-align: left; line-height: 1.4;
+  transition: all 0.15s; font-family: 'DM Sans', sans-serif;
+}
+.bot-q-btn:hover { background: rgba(102,8,16,0.06); border-color: #3D0A10; }
+.bot-back {
+  background: none; border: none; cursor: pointer;
+  font-size: 11px; font-weight: 700; color: var(--muted);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 4px 0 0; display: flex; align-items: center; gap: 4px;
+  font-family: 'DM Sans', sans-serif;
+}
+.bot-back:hover { color: #3D0A10; }
+
+/* STICKY BONUS BADGE */
+#bonusBadge {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9990;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+#bonusBadgeInner {
+  background: #3D0A10;
+  border-radius: 12px 0 0 12px;
+  padding: 14px 16px 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: -6px 4px 32px rgba(39,7,7,0.45);
+  cursor: pointer;
+  text-decoration: none;
+  transition: padding-right 0.2s, background 0.2s;
+  max-width: 160px;
+}
+#bonusBadgeInner:hover {
+  background: #660810;
+  padding-right: 22px;
+}
+.badge-eyebrow {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #F2C6D0;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1;
+}
+.badge-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--stone);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.4;
+}
+.badge-sub {
+  font-size: 10px;
+  color: rgba(241,235,235,0.5);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.3;
+}
+#bonusBadgeClose {
+  background: rgba(39,7,7,0.65);
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  color: rgba(241,235,235,0.6);
+  cursor: pointer;
+  margin-right: 4px;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.15s, color 0.15s;
+  line-height: 1;
+}
+#bonusBadgeClose:hover {
+  background: rgba(102,8,16,0.9);
+  color: var(--stone);
+}
+@media (max-width: 768px) {
+  #bonusBadge { display: none; }
+}
+.worked-with {
+  margin-top: 24px;
+  border-top: 1px solid rgba(102,8,16,0.12);
+}
+.worked-with-toggle {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 0; font-family: 'DM Sans', sans-serif;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+  transition: color 0.2s;
+}
+.worked-with-toggle:hover { color: var(--deep-red); }
+.worked-with-toggle[aria-expanded="true"] { color: var(--deep-red); }
+.worked-with-arrow {
+  font-size: 20px; line-height: 1; transition: transform 0.3s ease;
+  display: inline-block;
+}
+.worked-with-toggle[aria-expanded="true"] .worked-with-arrow {
+  transform: rotate(180deg);
+}
+.worked-with-body {
+  overflow: hidden; max-height: 0;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.worked-with-body.open { max-height: 400px; }
+.worked-with-tags {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  padding: 4px 0 20px;
+}
+.worked-with-tags span {
+  font-size: 12px; font-weight: 600; color: var(--ink-light);
+  background: rgba(102,8,16,0.05); border: 1px solid rgba(102,8,16,0.12);
+  padding: 5px 14px; border-radius: 100px;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s;
+}
+.worked-with-tags span:hover {
+  background: rgba(242,198,208,0.3); border-color: rgba(102,8,16,0.25);
+  color: var(--deep-red);
+}
+#exitPopupOverlay {
+  position: fixed; inset: 0; background: rgba(10,2,2,0.72);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  display: none; align-items: center; justify-content: center;
+  padding: 24px; z-index: 99999;
+}
+#exitPopupOverlay.active { display: flex; }
+.exit-popup-card {
+  background: #fff; border-radius: 28px; max-width: 480px; width: 100%;
+  overflow: hidden; position: relative;
+  box-shadow: 0 40px 100px rgba(39,7,7,0.35), 0 12px 32px rgba(39,7,7,0.2), 0 0 0 1px rgba(242,198,208,0.3);
+  animation: exitPopIn 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+@keyframes exitPopIn {
+  0% { opacity: 0; transform: scale(0.88) translateY(16px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+.exit-popup-accent {
+  height: 5px;
+  background: linear-gradient(90deg, #F2C6D0, #3D0A10, #F2C6D0);
+  background-size: 200% 100%; animation: shimmerBar 3s ease infinite;
+}
+@keyframes shimmerBar {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+.exit-popup-close {
+  position: absolute; top: 18px; right: 20px; width: 32px; height: 32px;
+  border-radius: 50%; background: rgba(61,10,16,0.07); border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; color: #7a5a5a; transition: all 0.15s; font-family: 'DM Sans', sans-serif;
+}
+.exit-popup-close:hover { background: rgba(61,10,16,0.13); color: #3D0A10; }
+.exit-popup-body { padding: 36px 40px 40px; text-align: center; }
+.exit-popup-eyebrow {
+  display: inline-block; font-size: 9px; font-weight: 800;
+  letter-spacing: 0.22em; text-transform: uppercase; color: #3D0A10;
+  background: rgba(242,198,208,0.35); padding: 5px 14px;
+  border-radius: 100px; margin-bottom: 20px;
+}
+.exit-popup-headline {
+  font-size: 28px; font-weight: 800; color: #1a0a0a;
+  line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 14px;
+}
+.exit-popup-headline em { font-style: normal; color: #3D0A10; }
+.exit-popup-sub {
+  font-size: 14px; color: #5a3a3a; line-height: 1.75; margin-bottom: 28px;
+}
+.exit-popup-cta {
+  display: block; width: 100%; padding: 18px 32px; background: #3D0A10;
+  color: #f1ebeb; font-size: 13px; font-weight: 800; letter-spacing: 0.1em;
+  text-transform: uppercase; text-decoration: none; border-radius: 100px;
+  border: none; cursor: pointer; transition: all 0.2s;
+  font-family: 'DM Sans', sans-serif; margin-bottom: 16px; text-align: center;
+}
+.exit-popup-cta:hover { background: #660810; box-shadow: 0 6px 28px rgba(61,10,16,0.28); transform: translateY(-1px); }
+.exit-popup-form { display: flex; flex-direction: column; gap: 0; margin-bottom: 0; }
+.exit-popup-input {
+  width: 100%; padding: 14px 18px;
+  border: 1.5px solid rgba(102,8,16,0.15);
+  border-radius: 100px; background: #faf7f7;
+  font-size: 13px; font-family: 'DM Sans', sans-serif;
+  color: #1a0a0a; outline: none;
+  transition: border-color 0.15s;
+}
+.exit-popup-input::placeholder { color: #b09090; }
+.exit-popup-input:focus { border-color: rgba(102,8,16,0.4); background: #fff; }
+.exit-popup-sub br { display: block; content: ''; margin-top: 6px; }
+.exit-popup-footnote { font-size: 11px; color: #9a7a7a; line-height: 1.6; max-width: 340px; margin: 0 auto; }
+.exit-popup-dismiss {
+  display: block; margin-top: 14px; font-size: 11px; color: #b09090;
+  cursor: pointer; background: none; border: none; font-family: 'DM Sans', sans-serif;
+  text-decoration: underline; text-underline-offset: 2px; width: 100%;
+}
+.exit-popup-dismiss:hover { color: #7a5a5a; }
+.exit-popup-blob {
+  position: absolute; width: 200px; height: 200px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(242,198,208,0.18) 0%, transparent 70%);
+  top: -60px; right: -60px; pointer-events: none;
+}
+
+/* VIP TOGGLE */
+.vip-toggle-wrap {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 12px; margin: 24px auto 36px;
+  border: 1.5px solid rgba(242,198,208,0.55);
+  border-radius: 100px;
+  padding: 10px 20px;
+  background: rgba(242,198,208,0.06);
+  display: flex;
+}
+.vip-toggle-label {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted); font-family: 'DM Sans', sans-serif;
+}
+.vip-label-right { display: flex; align-items: center; gap: 8px; }
+.vip-badge {
+  display: inline-block; font-size: 9px; font-weight: 800; letter-spacing: 0.15em;
+  text-transform: uppercase; background: rgba(242,198,208,0.3);
+  color: var(--deep-red); padding: 3px 10px; border-radius: 100px;
+}
+.vip-toggle-btn {
+  background: none; border: none; cursor: pointer; padding: 0;
+  display: flex; align-items: center;
+}
+.vip-toggle-track {
+  width: 44px; height: 24px; background: rgba(102,8,16,0.15);
+  border-radius: 100px; position: relative; display: block;
+  transition: background 0.25s;
+}
+.vip-toggle-btn[aria-pressed="true"] .vip-toggle-track { background: #3D0A10; }
+.vip-toggle-thumb {
+  position: absolute; top: 3px; left: 3px;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--muted); transition: transform 0.25s, background 0.25s;
+}
+.vip-toggle-btn[aria-pressed="true"] .vip-toggle-thumb {
+  transform: translateX(20px); background: #F2C6D0;
+}
+@keyframes fadeInRow {
+  0% { opacity: 0; transform: translateX(-6px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.vip-inclusion.showing { animation: fadeInRow 0.4s ease forwards; }
+.vip-inclusion { color: #e8d9a0 !important; }
+.vip-inclusion strong { color: #e8d9a0; font-weight: 700; }
+.vip-tick {
+  background: rgba(242,198,208,0.18) !important;
+  border-color: rgba(242,198,208,0.3) !important;
+  color: #F2C6D0 !important;
+}
+.pricing-card.vip-active { outline: 2px solid rgba(242,198,208,0.3); }
+
+/* CURRENCY SWITCHER */
+.currency-wrap {
+  display: flex; align-items: center; justify-content: center;
+  gap: 4px; margin: 0 auto 28px;
+  background: rgba(102,8,16,0.06);
+  border: 1px solid rgba(102,8,16,0.12);
+  border-radius: 100px;
+  padding: 4px;
+  width: fit-content;
+}
+.currency-btn {
+  font-size: 11px; font-weight: 800; letter-spacing: 0.14em;
+  text-transform: uppercase; border: none; cursor: pointer;
+  padding: 7px 18px; border-radius: 100px;
+  background: transparent; color: var(--muted);
+  font-family: 'DM Sans', sans-serif; transition: all 0.2s;
+}
+.currency-btn:hover { color: var(--ink); }
+.currency-btn.active {
+  background: #3D0A10; color: var(--stone);
+}
+.currency-note {
+  font-size: 10px; color: var(--muted); text-align: center;
+  margin: -8px auto 24px; max-width: 440px;
+  opacity: 0.45; letter-spacing: 0.02em; line-height: 1.5;
+}
+
+/* PROGRESS BAR */
+#readProgress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #F2C6D0, #3D0A10);
+  z-index: 99999;
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
+
+/* BIO AUDIO PLAYER */
+.bio-audio {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(242,198,208,0.12);
+  border: 1px solid rgba(242,198,208,0.25);
+  border-radius: 100px;
+  padding: 10px 20px 10px 10px;
+  margin: 20px 0 28px;
+  max-width: 320px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.bio-audio:hover { background: rgba(242,198,208,0.18); }
+.bio-audio-btn {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: #F2C6D0; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: #3D0A10; flex-shrink: 0; position: relative;
+  transition: transform 0.15s;
+}
+.bio-audio-btn:hover { transform: scale(1.07); }
+.bio-audio-pulse {
+  position: absolute; inset: -4px; border-radius: 50%;
+  border: 2px solid rgba(242,198,208,0.4);
+  animation: audioPulse 2s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes audioPulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.18); opacity: 0; }
+}
+.bio-audio-text {
+  display: flex; flex-direction: column; gap: 2px; flex: 1;
+}
+.bio-audio-label {
+  font-size: 13px; font-weight: 700; color: var(--stone);
+  font-family: 'DM Sans', sans-serif;
+}
+.bio-audio-sub {
+  font-size: 10px; color: rgba(241,235,235,0.5);
+  font-family: 'DM Sans', sans-serif; letter-spacing: 0.05em;
+}
+.bio-audio-bar {
+  width: 60px; height: 3px; background: rgba(241,235,235,0.12);
+  border-radius: 2px; overflow: hidden; flex-shrink: 0;
+}
+.bio-audio-progress {
+  height: 100%; width: 0%; background: #F2C6D0;
+  border-radius: 2px; transition: width 0.1s linear;
+}
+.bio-audio.playing .bio-audio-pulse {
+  animation: audioPulse 1s ease-in-out infinite;
+}
+
+/* STILL THINKING ACCORDION */
+.thinking-accord {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 28px; padding: 14px 18px;
+  background: rgba(241,235,235,0.06);
+  border: 1px solid rgba(241,235,235,0.12);
+  border-radius: 12px;
+  cursor: pointer; gap: 16px;
+  transition: background 0.2s;
+}
+.thinking-accord:hover { background: rgba(241,235,235,0.1); }
+.thinking-label {
+  font-size: 12px; font-weight: 800; letter-spacing: 0.1em;
+  text-transform: uppercase; color: #F2C6D0;
+  font-family: 'DM Sans', sans-serif;
+}
+.thinking-arrow {
+  color: rgba(241,235,235,0.5);
+  transition: transform 0.25s ease; display: flex; flex-shrink: 0;
+}
+.thinking-accord[aria-expanded="true"] .thinking-arrow { transform: rotate(180deg); }
+.thinking-body {
+  overflow: hidden; max-height: 0;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.thinking-body.open { max-height: 1400px; }
+.thinking-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1px; background: rgba(241,235,235,0.08);
+  border-top: 1px solid rgba(241,235,235,0.08);
+  margin-top: 2px; border-radius: 0 0 12px 12px; overflow: hidden;
+}
+.thinking-item {
+  background: rgba(241,235,235,0.04);
+  padding: 20px 22px;
+}
+.thinking-item-wide {
+  grid-column: 1 / -1;
+  border-top: 1px solid rgba(241,235,235,0.08);
+}
+.thinking-q {
+  font-size: 13px; font-weight: 700; color: var(--stone);
+  margin-bottom: 8px; font-family: 'DM Sans', sans-serif;
+  font-style: italic;
+}
+.thinking-a {
+  font-size: 13px; color: rgba(241,235,235,0.55);
+  line-height: 1.7; font-family: 'DM Sans', sans-serif;
+}
+@media (max-width: 768px) {
+  .thinking-grid { grid-template-columns: 1fr; }
+  .thinking-item-wide { grid-column: 1; }
+}
+
+/* WELCOME BACK BANNER */
+#welcomeBackBanner {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 999999;
+  background: #3D0A10;
+  border-bottom: 1px solid rgba(242,198,208,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 48px 10px 20px;
+  transition: opacity 0.3s ease;
+}
+.wb-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #F2C6D0;
+  animation: wbPulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes wbPulse {
+  0%, 100% { opacity: 1; } 50% { opacity: 0.4; }
+}
+.wb-text {
+  font-size: 12px; font-weight: 600; color: rgba(241,235,235,0.8);
+  font-family: 'DM Sans', sans-serif; letter-spacing: 0.04em;
+}
+.wb-cta {
+  font-size: 11px; font-weight: 800; letter-spacing: 0.1em;
+  text-transform: uppercase; color: #F2C6D0;
+  text-decoration: none; font-family: 'DM Sans', sans-serif;
+  border-bottom: 1px solid rgba(242,198,208,0.4);
+  padding-bottom: 1px; transition: border-color 0.15s;
+}
+.wb-cta:hover { border-color: #F2C6D0; }
+.wb-close {
+  position: absolute; right: 16px;
+  background: none; border: none; cursor: pointer;
+  font-size: 11px; color: rgba(241,235,235,0.4);
+  font-family: 'DM Sans', sans-serif; padding: 4px;
+  transition: color 0.15s; line-height: 1;
+}
+.wb-close:hover { color: rgba(241,235,235,0.8); }
+
+/* SECTION CTA STRIP */
+.section-cta-strip {
+  background: #f2f2f2;
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(102,8,16,0.08);
+}
+.section-cta-strip .btn-primary {
+  min-width: 260px;
+  text-align: center;
+}
+
+/* EMAIL THIS PAGE */
+.email-page-wrap {
+  max-width: 480px;
+  margin: 48px auto 0;
+  padding: 28px 32px;
+  background: rgba(102,8,16,0.04);
+  border: 1px solid rgba(102,8,16,0.1);
+  border-radius: 20px;
+  text-align: center;
+}
+.email-page-label {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 4px;
+  font-family: 'DM Sans', sans-serif;
+}
+.email-page-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 16px;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.5;
+}
+.email-page-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: stretch;
+}
+.email-page-input {
+  flex: 1;
+  padding: 11px 16px;
+  border: 1.5px solid rgba(102,8,16,0.15);
+  border-radius: 100px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ink);
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.email-page-input::placeholder { color: #b09090; }
+.email-page-input:focus { border-color: rgba(102,8,16,0.35); }
+.email-page-btn {
+  padding: 11px 20px;
+  background: #3D0A10;
+  color: var(--stone);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.email-page-btn:hover { background: #660810; }
+.email-page-confirm {
+  font-size: 12px;
+  color: var(--deep-red);
+  font-weight: 600;
+  margin-top: 12px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ROI CALCULATOR */
+.roi-section {
+  background: #f2f2f2;
+  padding: 80px 40px;
+}
+.roi-heading {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+.roi-sub {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+.roi-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 680px;
+}
+.roi-slider-wrap { display: flex; flex-direction: column; gap: 10px; }
+.roi-slider-labels {
+  display: flex; justify-content: space-between;
+  font-size: 11px; font-weight: 700; color: var(--muted);
+  letter-spacing: 0.08em; font-family: 'DM Sans', sans-serif;
+}
+.roi-slider {
+  -webkit-appearance: none;
+  width: 100%; height: 3px;
+  background: linear-gradient(to right, #3D0A10 0%, #3D0A10 var(--pct, 20%), rgba(102,8,16,0.15) var(--pct, 20%), rgba(102,8,16,0.15) 100%);
+  border-radius: 2px; outline: none; cursor: pointer;
+}
+.roi-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: #3D0A10; border: 3px solid #f2f2f2;
+  box-shadow: 0 2px 8px rgba(39,7,7,0.3); cursor: pointer;
+}
+.roi-slider::-moz-range-thumb {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: #3D0A10; border: 3px solid #f2f2f2;
+  box-shadow: 0 2px 8px rgba(39,7,7,0.3); cursor: pointer;
+}
+.roi-current-label {
+  font-size: 14px; color: var(--ink-light);
+  font-family: 'DM Sans', sans-serif;
+}
+.roi-current-label strong { color: var(--ink); font-weight: 800; }
+.roi-targets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.roi-target-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px 20px;
+  display: flex; flex-direction: column; gap: 6px;
+  border: 1px solid rgba(102,8,16,0.08);
+  position: relative;
+}
+.roi-target-mid {
+  background: #3D0A10;
+  border-color: transparent;
+}
+.roi-target-badge {
+  display: inline-block; font-size: 8px; font-weight: 800;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  background: rgba(242,198,208,0.2); color: #F2C6D0;
+  padding: 3px 10px; border-radius: 100px;
+  font-family: 'DM Sans', sans-serif; margin-bottom: 2px;
+  width: fit-content;
+}
+.roi-target-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted);
+  font-family: 'DM Sans', sans-serif; line-height: 1.4;
+}
+.roi-target-mid .roi-target-label { color: rgba(241,235,235,0.45); }
+.roi-target-gain {
+  font-size: 26px; font-weight: 800; color: var(--deep-red);
+  letter-spacing: -0.02em; font-family: 'DM Sans', sans-serif;
+  line-height: 1.1; margin: 2px 0;
+}
+.roi-target-mid .roi-target-gain { color: #F2C6D0; }
+.roi-target-recover {
+  font-size: 11px; color: var(--muted);
+  font-family: 'DM Sans', sans-serif; line-height: 1.5;
+}
+.roi-target-recover strong { color: var(--ink); font-weight: 700; }
+.roi-target-mid .roi-target-recover { color: rgba(241,235,235,0.45); }
+.roi-target-mid .roi-target-recover strong { color: rgba(241,235,235,0.8); }
+.roi-target-annual {
+  font-size: 12px; color: var(--ink-light);
+  font-family: 'DM Sans', sans-serif; line-height: 1.4;
+  margin-top: 4px; padding-top: 8px;
+  border-top: 1px solid rgba(102,8,16,0.08);
+}
+.roi-target-annual strong { color: var(--deep-red); font-weight: 800; }
+.roi-target-mid .roi-target-annual { color: rgba(241,235,235,0.45); border-top-color: rgba(241,235,235,0.1); }
+.roi-target-mid .roi-target-annual strong { color: #F2C6D0; }
+.roi-footnote {
+  font-size: 11px; color: var(--muted); text-align: center;
+  font-family: 'DM Sans', sans-serif; opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .roi-targets { grid-template-columns: 1fr; }
+}
+
+/* TRANSFORMATION TABS */
+.transform-tabs {
+  display: flex;
+  gap: 4px;
+  margin: 40px 0 0;
+  background: rgba(241,235,235,0.1);
+  border: 1px solid rgba(241,235,235,0.15);
+  border-radius: 100px;
+  padding: 4px;
+  width: fit-content;
+}
+.transform-tab-btn {
+  font-size: 11px; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; border: none; cursor: pointer;
+  padding: 10px 22px; border-radius: 100px;
+  background: transparent; color: rgba(241,235,235,0.4);
+  font-family: 'DM Sans', sans-serif; transition: all 0.2s;
+  white-space: nowrap;
+}
+.transform-tab-btn:hover { color: rgba(241,235,235,0.7); }
+.transform-tab-btn.active {
+  background: rgba(241,235,235,0.2);
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+.transform-panels { margin-top: 32px; }
+.transform-panel { display: none; }
+.transform-panel.active { display: block; }
+.transform-panel-tag {
+  display: inline-block;
+  font-size: 10px; font-weight: 800; letter-spacing: 0.18em;
+  text-transform: uppercase; color: #3D0A10;
+  background: #F2C6D0; padding: 5px 14px;
+  border-radius: 100px; margin-bottom: 14px;
+  animation: tagPulse 2.4s ease-in-out infinite;
+}
+.transform-panel-title {
+  font-size: clamp(22px, 2.8vw, 32px);
+  font-weight: 800; color: #fff;
+  letter-spacing: -0.02em; margin-bottom: 28px;
+  line-height: 1.2;
+}
+.transform-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.transform-col {
+  background: rgba(10,2,2,0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(241,235,235,0.1);
+  border-radius: 16px;
+  padding: 24px 26px;
+}
+.transform-col-before { border-color: rgba(241,235,235,0.06); }
+.transform-col-after { border-color: rgba(242,198,208,0.45); background: rgba(61,10,16,0.6); }
+.transform-col-label {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.2em;
+  text-transform: uppercase; margin-bottom: 14px;
+  display: block; font-family: 'DM Sans', sans-serif;
+}
+.transform-col-before .transform-col-label { color: rgba(241,235,235,0.3); }
+.transform-col-after .transform-col-label { color: #F2C6D0; }
+.transform-col ul {
+  list-style: none; display: flex; flex-direction: column; gap: 8px;
+}
+.transform-col ul li {
+  font-size: 13px; line-height: 1.55;
+  font-family: 'DM Sans', sans-serif;
+  display: flex; gap: 8px; align-items: flex-start;
+}
+.transform-col-before ul li { color: rgba(241,235,235,0.65); }
+.transform-col-after ul li { color: rgba(241,235,235,1); }
+.transform-col-before ul li::before { content: '—'; opacity: 0.3; flex-shrink: 0; }
+.transform-col-after ul li::before { content: '✓'; color: #F2C6D0; flex-shrink: 0; font-weight: 700; }
+.transform-result {
+  background: rgba(242,198,208,0.08);
+  border: 1px solid rgba(242,198,208,0.2);
+  border-radius: 14px;
+  padding: 22px 28px;
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.transform-result-bar {
+  width: 3px; min-height: 40px; background: #F2C6D0;
+  border-radius: 2px; flex-shrink: 0; margin-top: 3px;
+}
+.transform-result-text {
+  font-size: 18px; font-weight: 800;
+  color: #F2C6D0; line-height: 1.45;
+  font-family: 'DM Sans', sans-serif;
+}
+@media (max-width: 768px) {
+  .transform-split { grid-template-columns: 1fr; }
+  .transform-tabs { width: 100%; justify-content: space-between; }
+  .transform-tab-btn { padding: 10px 14px; font-size: 10px; }
+}
+
+/* FOR / NOT FOR COMBINED */
+.for-combined {
+  background: var(--dark-red);
+  padding: 100px 40px;
+}
+.for-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin-top: 52px;
+  background: rgba(241,235,235,0.06);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.for-col {
+  padding: 36px 36px 40px;
+}
+.for-col-yes { background: var(--dark-red); }
+.for-col-no { background: #1a0305; }
+.for-col-header { margin-bottom: 24px; }
+.for-col-tag {
+  display: inline-block;
+  font-size: 10px; font-weight: 800; letter-spacing: 0.18em;
+  text-transform: uppercase; padding: 6px 16px;
+  border-radius: 100px; font-family: 'DM Sans', sans-serif;
+}
+.for-col-tag-yes {
+  background: rgba(242,198,208,0.15);
+  color: #F2C6D0;
+  border: 1px solid rgba(242,198,208,0.25);
+}
+.for-col-tag-no {
+  background: rgba(241,235,235,0.06);
+  color: rgba(241,235,235,0.35);
+  border: 1px solid rgba(241,235,235,0.1);
+}
+.for-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.for-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(241,235,235,0.06);
+}
+.for-list li:last-child { border-bottom: none; }
+.for-icon {
+  font-size: 12px; font-weight: 800;
+  flex-shrink: 0; margin-top: 2px;
+  font-family: 'DM Sans', sans-serif;
+}
+.for-icon.yes { color: #F2C6D0; }
+.for-icon.no { color: rgba(241,235,235,0.2); }
+.for-list li div strong {
+  display: block;
+  font-size: 14px; font-weight: 700;
+  color: var(--stone); line-height: 1.4;
+  margin-bottom: 3px;
+  font-family: 'DM Sans', sans-serif;
+}
+.for-list li div p {
+  font-size: 12px;
+  color: rgba(241,235,235,0.45);
+  line-height: 1.6;
+  font-family: 'DM Sans', sans-serif;
+}
+@media (max-width: 768px) {
+  .for-split { grid-template-columns: 1fr; }
+}
+
+/* KNOW LABEL CURSOR */
+#knowLabel::after {
+  content: '|';
+  opacity: 0;
+  font-weight: 300;
+  animation: none;
+}
+#knowLabel.typing::after { opacity: 1; animation: blink 0.7s step-end infinite; }
+#knowLabel.done::after { opacity: 1; animation: blink 0.7s step-end infinite; }
+
+/* PROBLEM SECTION REDESIGN */
+.problem-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding: 20px 0;
+}
+.problem-left-kicker {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: 16px; font-family: 'DM Sans', sans-serif;
+}
+.problem-left-heading {
+  font-size: clamp(18px, 2.2vw, 26px);
+  font-weight: 700; color: var(--ink);
+  line-height: 1.45; text-wrap: pretty;
+}
+.problem-left-heading em {
+  font-style: normal; color: #F2C6D0; font-weight: 800;
+}
+.problem-right {
+  border-left: 2px solid rgba(102,8,16,0.12);
+  padding-left: 48px;
+}
+.problem-right-label {
+  font-size: 20px; font-weight: 800; letter-spacing: -0.01em;
+  color: var(--deep-red);
+  margin-bottom: 20px; font-family: 'DM Sans', sans-serif;
+  line-height: 1.35; text-transform: none;
+}
+.problem-list {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 0;
+}
+.problem-list li {
+  font-size: 17px; font-weight: 700; color: var(--ink);
+  line-height: 1.4; padding: 14px 0;
+  border-bottom: 1px solid rgba(102,8,16,0.08);
+  font-family: 'DM Sans', sans-serif;
+  display: flex; gap: 12px; align-items: flex-start;
+}
+.problem-list li:last-child { border-bottom: none; }
+.problem-list li::before {
+  content: '→';
+  color: var(--deep-red); font-weight: 800;
+  flex-shrink: 0; margin-top: 1px;
+}
+@media (max-width: 768px) {
+  .problem-split { grid-template-columns: 1fr; gap: 36px; }
+  .problem-right { border-left: none; padding-left: 0; border-top: 2px solid rgba(102,8,16,0.12); padding-top: 32px; }
+}
+
+/* FOR DISCLAIMER ACCORDION */
+.for-disclaimer-toggle {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 8px; cursor: pointer;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+  color: rgba(241,235,235,0.4); font-family: 'DM Sans', sans-serif;
+  background: none; border: none; padding: 0;
+  transition: color 0.15s;
+}
+.for-disclaimer-toggle:hover { color: rgba(241,235,235,0.65); }
+.for-disclaimer-toggle[aria-expanded="true"] { color: rgba(241,235,235,0.65); }
+.for-disclaimer-toggle svg { transition: transform 0.25s ease; flex-shrink: 0; }
+.for-disclaimer-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+.for-disclaimer-body {
+  overflow: hidden; max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+.for-disclaimer-body.open { max-height: 300px; }
+.for-disclaimer-text {
+  font-size: 12px; color: rgba(241,235,235,0.45);
+  line-height: 1.7; font-family: 'DM Sans', sans-serif;
+  margin-top: 10px;
+}
+
+/* STICKY MOBILE CTA BAR */
+#mobileStickyBar {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 9997;
+  background: #3D0A10;
+  border-top: 1px solid rgba(242,198,208,0.2);
+  padding: 12px 20px;
+  box-shadow: 0 -4px 24px rgba(39,7,7,0.3);
+}
+.mobile-sticky-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.mobile-sticky-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.mobile-sticky-urgency {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.18em;
+  text-transform: uppercase; color: #F2C6D0;
+  font-family: 'DM Sans', sans-serif;
+  display: flex; align-items: center; gap: 5px;
+}
+.mobile-sticky-urgency-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: #F2C6D0;
+  animation: wbPulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+.mobile-sticky-label {
+  font-size: 13px; font-weight: 700; color: var(--stone);
+  font-family: 'DM Sans', sans-serif; line-height: 1.2;
+}
+.mobile-sticky-cta {
+  background: #F2C6D0; color: #3D0A10;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.1em;
+  text-transform: uppercase; text-decoration: none;
+  padding: 12px 20px; border-radius: 100px;
+  font-family: 'DM Sans', sans-serif; white-space: nowrap;
+  flex-shrink: 0;
+}
+.mobile-sticky-close {
+  background: none; border: none; cursor: pointer;
+  color: rgba(241,235,235,0.3); font-size: 14px;
+  padding: 4px; font-family: 'DM Sans', sans-serif;
+  flex-shrink: 0; line-height: 1;
+}
+.mobile-sticky-close:hover { color: rgba(241,235,235,0.7); }
+@media (min-width: 769px) {
+  #mobileStickyBar { display: none !important; }
+}
+@media (max-width: 768px) {
+  #mobileStickyBar { display: block; }
+}
+
+/* DESKTOP URGENCY BAR */
+#desktopUrgencyBar {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 9996;
+  background: #270707;
+  border-top: 1px solid rgba(242,198,208,0.15);
+  padding: 10px 40px;
+}
+.desktop-urgency-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.desktop-urgency-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #F2C6D0; flex-shrink: 0;
+  animation: wbPulse 2s ease-in-out infinite;
+}
+.desktop-urgency-text {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.06em;
+  color: rgba(241,235,235,0.7); font-family: 'DM Sans', sans-serif;
+}
+.desktop-urgency-text strong { color: #F2C6D0; font-weight: 800; }
+.desktop-urgency-cta {
+  font-size: 11px; font-weight: 800; letter-spacing: 0.1em;
+  text-transform: uppercase; color: #F2C6D0;
+  text-decoration: none; font-family: 'DM Sans', sans-serif;
+  border-bottom: 1px solid rgba(242,198,208,0.4);
+  padding-bottom: 1px; transition: border-color 0.15s; white-space: nowrap;
+}
+.desktop-urgency-cta:hover { border-color: #F2C6D0; }
+.desktop-urgency-close {
+  background: none; border: none; cursor: pointer;
+  color: rgba(241,235,235,0.25); font-size: 12px;
+  font-family: 'DM Sans', sans-serif; padding: 2px 4px; line-height: 1;
+  position: absolute; right: 20px;
+}
+.desktop-urgency-close:hover { color: rgba(241,235,235,0.6); }
+@media (max-width: 768px) {
+  #desktopUrgencyBar { display: none !important; }
+}
+@media (min-width: 769px) {
+  #desktopUrgencyBar { display: block; }
+}
+
+/* TRANSFORM RESULT CARDS */
+.transform-result-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+.transform-result-card {
+  background: rgba(20,4,4,0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(241,235,235,0.08);
+  border-radius: 16px;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.transform-result-card-tag {
+  display: inline-block;
+  font-size: 10px; font-weight: 800; letter-spacing: 0.18em;
+  text-transform: uppercase; color: #3D0A10;
+  background: #F2C6D0; padding: 5px 14px;
+  border-radius: 100px; width: fit-content;
+}
+.transform-result-card-text {
+  font-size: 16px; font-weight: 700;
+  color: rgba(241,235,235,0.92);
+  line-height: 1.6; font-family: 'DM Sans', sans-serif;
+}
+@media (max-width: 768px) {
+  .transform-result-cards { grid-template-columns: 1fr; }
+}
+
+/* PRICE ANCHOR */
+.pricing-anchor {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto 28px;
+  line-height: 1.6;
+  font-family: 'DM Sans', sans-serif;
+  opacity: 0.7;
+}
+
+/* INSIDE SIMPLE CARDS */
+.inside-card-simple {
+  background: #3D0A10;
+  border: 1px solid rgba(241,235,235,0.08);
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.inside-card-simple .inside-card-tag { color: #F2C6D0; background: rgba(242,198,208,0.12); }
+.inside-card-simple .inside-card-title { color: var(--stone); }
+.inside-card-simple .inside-card-desc { color: rgba(241,235,235,0.65); font-size: 14px; line-height: 1.7; margin: 0; }
+.inside-card-simple .inside-card-desc strong { color: var(--stone); font-weight: 700; }
+
+/* TESTIMONIAL IMAGES */
+.testimonial-images-section {
+  background: #f2f2f2;
+  padding: 60px 40px;
+}
+.testimonial-images-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.testimonial-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
+@media (max-width: 768px) {
+  .testimonial-images-section { padding: 40px 20px; }
+  .testimonial-images-grid { grid-template-columns: 1fr; gap: 16px; }
+  .testimonial-img { border-radius: 12px; }
+}
+
+/* KAJABI FORM OVERRIDE — exit popup */
+.exit-kajabi-wrap .kajabi-form,
+.exit-kajabi-wrap form {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+  min-height: 0 !important;
+}
+.exit-popup-form.exit-kajabi-wrap {
+  min-height: 0 !important;
+  margin-bottom: 16px;
+}
+.exit-kajabi-wrap > div,
+.exit-kajabi-wrap .kajabi-form-wrapper,
+.exit-kajabi-wrap .form-wrapper,
+.exit-kajabi-wrap .section,
+.exit-kajabi-wrap .container {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.exit-kajabi-wrap h1,
+.exit-kajabi-wrap h2,
+.exit-kajabi-wrap h3,
+.exit-kajabi-wrap p:not(.exit-popup-footnote) {
+  display: none !important;
+}
+.exit-kajabi-wrap input[type="text"],
+.exit-kajabi-wrap input[type="email"],
+.exit-kajabi-wrap input[type="tel"] {
+  width: 100% !important;
+  padding: 14px 18px !important;
+  border: 1.5px solid rgba(102,8,16,0.15) !important;
+  border-radius: 100px !important;
+  background: #faf7f7 !important;
+  font-size: 13px !important;
+  font-family: 'DM Sans', sans-serif !important;
+  color: #1a0a0a !important;
+  outline: none !important;
+  box-shadow: none !important;
+  margin-bottom: 10px !important;
+}
+.exit-kajabi-wrap input[type="text"]::placeholder,
+.exit-kajabi-wrap input[type="email"]::placeholder {
+  color: #b09090 !important;
+}
+.exit-kajabi-wrap input[type="text"]:focus,
+.exit-kajabi-wrap input[type="email"]:focus {
+  border-color: rgba(102,8,16,0.4) !important;
+  background: #fff !important;
+}
+.exit-kajabi-wrap input[type="submit"],
+.exit-kajabi-wrap button[type="submit"],
+.exit-kajabi-wrap .form-submit,
+.exit-kajabi-wrap .btn,
+.exit-kajabi-wrap .kajabi-button {
+  display: block !important;
+  width: 100% !important;
+  padding: 18px 32px !important;
+  background: #3D0A10 !important;
+  color: #f1ebeb !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  border-radius: 100px !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-family: 'DM Sans', sans-serif !important;
+  text-align: center !important;
+  transition: background 0.2s !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+.exit-kajabi-wrap input[type="submit"]:hover,
+.exit-kajabi-wrap button[type="submit"]:hover,
+.exit-kajabi-wrap .kajabi-button:hover {
+  background: #660810 !important;
+}
+.exit-kajabi-wrap label {
+  display: none !important;
+}
+.exit-kajabi-wrap .form-group,
+.exit-kajabi-wrap .field-group,
+.exit-kajabi-wrap .kajabi-form-group {
+  margin-bottom: 0 !important;
+}
+
+/* ==========================================
+   COMPREHENSIVE MOBILE OPTIMISATION
+   ========================================== */
+@media (max-width: 768px) {
+
+  /* NAV */
+  nav { padding: 0 16px; height: 56px; }
+  .nav-logo { font-size: 11px; }
+  .nav-cta { padding: 8px 16px; font-size: 10px; }
+
+  /* HERO */
+  .hero { padding: 80px 20px 60px; min-height: auto; }
+  .hero h1 { font-size: clamp(32px, 9vw, 48px); }
+  .hero-sub { font-size: 15px; margin-bottom: 32px; }
+  .hero-cta-group { flex-direction: column; align-items: center; gap: 12px; }
+  .hero-cta-group a { width: 100%; text-align: center; }
+
+  /* PROBLEM */
+  .problem-section { padding: 60px 20px; }
+  .problem-split { grid-template-columns: 1fr; gap: 36px; }
+  .problem-right { border-left: none; padding-left: 0; border-top: 2px solid rgba(102,8,16,0.12); padding-top: 28px; }
+  .problem-left-heading { font-size: 20px; }
+  .problem-right-label { font-size: 17px; }
+  .problem-list li { font-size: 15px; }
+
+  /* TRANSFORMATION */
+  .transform-section { padding: 60px 20px; background-attachment: scroll; }
+  .transform-result-cards { grid-template-columns: 1fr; gap: 12px; margin-top: 28px; }
+  .transform-result-card { padding: 22px 20px; }
+  .transform-result-card-text { font-size: 14px; }
+
+  /* INCLUSIONS */
+  .inside-section { padding: 60px 20px; }
+  .inside-grid { grid-template-columns: 1fr; }
+  .inside-card-simple { padding: 24px 20px; }
+
+  /* TESTIMONIALS */
+  .testimonials-section { padding: 60px 20px; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .testimonial-images-section { padding: 40px 16px; }
+  .testimonial-images-grid { grid-template-columns: 1fr; gap: 14px; }
+
+  /* FOR / NOT FOR */
+  .for-combined { padding: 60px 20px; }
+  .for-split { grid-template-columns: 1fr; }
+  .for-col { padding: 24px 20px; }
+
+  /* PRICING */
+  .pricing-section { padding: 60px 20px; }
+  .pricing-cards { grid-template-columns: 1fr; }
+  .pricing-card { padding: 28px 22px; }
+  .pricing-card-price { font-size: 60px; }
+  .vip-toggle-wrap { flex-wrap: wrap; justify-content: center; gap: 8px; padding: 10px 14px; }
+  .currency-wrap { gap: 2px; }
+  .currency-btn { padding: 7px 12px; font-size: 10px; }
+
+  /* GUARANTEE */
+  .guarantee-section { padding: 60px 20px; }
+  .guarantee-box { grid-template-columns: 1fr; gap: 20px; padding: 0; }
+  .guarantee-icon-col { flex-direction: row; gap: 12px; }
+  .guarantee-icon-line { display: none; }
+  .guarantee-text { font-size: 14px; }
+
+  /* BIO */
+  .bio-section { padding: 60px 20px; }
+  .bio-inner { grid-template-columns: 1fr; gap: 32px; }
+  .bio-content p { font-size: 14px; }
+
+  /* FAQ */
+  .faq-section { padding: 60px 20px; }
+  .faq-list { margin-top: 32px; }
+  .faq-toggle { font-size: 15px; padding: 18px 0; }
+
+  /* TL;DR URGENCY */
+  .urgency-section { padding: 60px 20px; }
+  .urgency-inner { grid-template-columns: 1fr; gap: 28px; }
+  .urgency-left { border-right: none; padding-right: 0; border-bottom: 1px solid rgba(61,10,16,0.15); padding-bottom: 28px; }
+  .urgency-label { font-size: 26px; }
+
+  /* PROMISE */
+  .guarantee-eyebrow { font-size: 12px; }
+
+  /* STICKY BOT */
+  #jpBot { bottom: 70px; right: 16px; }
+  #jpBotWindow { width: calc(100vw - 32px); right: 0; max-height: 420px; }
+
+  /* BONUS BADGE */
+  #bonusBadge { display: none; }
+
+  /* EXIT POPUP */
+  #exitPopupOverlay { padding: 16px; }
+  .exit-popup-body { padding: 28px 24px 28px; }
+  .exit-popup-headline { font-size: 22px; }
+  .exit-popup-sub { font-size: 13px; }
+
+  /* GENERAL */
+  .section-h2 { font-size: clamp(24px, 6vw, 36px); }
+  .btn-primary { padding: 16px 28px; font-size: 12px; }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 30px; }
+  .pricing-card-price { font-size: 52px; }
+  .for-col { padding: 20px 16px; }
+  .transform-result-card { padding: 18px 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">Woman Mastery HQ</span>
+  <div class="nav-links" id="navLinks">
+    <a href="#transformation" class="nav-link" data-section="transformation">Transformation</a>
+    <a href="#inside" class="nav-link" data-section="inside">Inclusions</a>
+    <a href="#results" class="nav-link" data-section="results">Results</a>
+    <a href="#pricing" class="nav-link" data-section="pricing">Join</a>
+    <a href="#faq" class="nav-link" data-section="faq">FAQ</a>
+  </div>
+  <a href="#pricing" class="nav-cta">Join Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div style="max-width:860px;margin:0 auto;">
+    <h1 id="heroHeadline">Make $20K+ Months<br><em>Your New Baseline.</em></h1>
+    <p class="hero-sub" id="heroSub">WMHQ Membership gives you the business strategy, content systems, sales psychology, and subconscious identity work so you can scale through every season of life without constantly rebuilding your business.</p>
+    <div class="hero-cta-group">
+      <a href="#pricing" class="btn-primary" style="background:#F2C6D0;color:#3D0A10;">Join the Membership</a>
+      <a href="#inside" class="btn-ghost">See What's Inside</a>
+    </div>
+    <p class="hero-note">$450 AUD/month for 6 months · $400 AUD/month for 12 months · Cancel at end of term</p>
+  </div>
+</section>
+
+
+<!-- PROBLEM SECTION -->
+<section class="problem-section" id="what-is-wmhq">
+  <div class="container">
+    <div class="problem-split">
+      <div class="problem-left">
+        <h2 class="problem-left-heading">If your revenue is still inconsistent after all the courses, content, and hard work, <em>the answer isn't just strategy. It's your subconscious.</em> Woman Mastery HQ Membership fixes both.</h2>
+      </div>
+      <div class="problem-right">
+        <p class="problem-right-label">WMHQ is for you as an online business owner who wants to:</p>
+        <ul class="problem-list">
+          <li>Say what you do in a way that makes people want it.</li>
+          <li>Build a brand presence that stays top of mind.</li>
+          <li>Turn attention into steady, recurring sales.</li>
+          <li>Stop sabotaging when things start working.</li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:48px;">
+      <a href="#pricing" class="btn-primary" style="background:#3D0A10;color:var(--stone);">Join WMHQ Membership</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORMATION TIMELINE -->
+<section class="transform-section" id="transformation">
+  <div class="container">
+    <p class="section-eyebrow">The WMHQ Transformation</p>
+    <h2 class="section-h2">What changes,<br>and when.</h2>
+    <div class="transform-result-cards">
+      <div class="transform-result-card">
+        <span class="transform-result-card-tag">Months 1–3</span>
+        <p class="transform-result-card-text">You stop having big months that break you. You build the foundation for more money, more visibility, and more demand without disappearing, panicking, getting sick, or changing your entire business the second growth feels uncomfortable.</p>
+      </div>
+      <div class="transform-result-card">
+        <span class="transform-result-card-tag">Months 3–6</span>
+        <p class="transform-result-card-text">You stop needing a perfect week to make sales. You build a simple sales system that moves people from content to trust to desire to decision, so revenue stops depending on your mood, motivation, or daily energy.</p>
+      </div>
+      <div class="transform-result-card">
+        <span class="transform-result-card-tag">Months 6–12</span>
+        <p class="transform-result-card-text">You stop treating high-income months like lucky spikes. You build the systems, demand, visibility, and capacity that make bigger months normal, repeatable, and easier to hold.</p>
+      </div>
+    </div>
+    <div style="text-align:center;padding:40px 0 0;">
+      <a href="#pricing" class="btn-primary" style="background:#F2C6D0;color:#3D0A10;">Join WMHQ Membership</a>
+    </div>
+  </div>
+</section>
+
+<section class="inside-section" id="inside">
+  <div class="container-wide">
+    <p class="section-eyebrow">Everything Inside WMHQ</p>
+    <h2 class="section-h2">Built different.<br><em><span id="sixCounter">Six</span> components that work together.</em></h2>
+    <div class="inside-grid">
+      <div class="inside-card-simple">
+        <span class="inside-card-tag">Weekly · Live</span>
+        <h3 class="inside-card-title">Live Calls with Jess</h3>
+        <p class="inside-card-desc">Every week, bring your content, offer, launch plan, sales process, or the thing you've been avoiding. Jess coaches you <strong>live, in real time, in front of the group.</strong> 60–90 minutes. You leave with <strong>clear next steps and the internal shift to actually take them.</strong> Replays included.</p>
+      </div>
+      <div class="inside-card-simple">
+        <span class="inside-card-tag">Ongoing</span>
+        <h3 class="inside-card-title">Personalised Audits</h3>
+        <p class="inside-card-desc">Submit your content, hooks, captions, sales page, offer positioning, launch messaging, or subconscious blocks for <strong>direct written feedback from Jess.</strong> You'll know <strong>exactly what to shift, tighten, or remove.</strong> No guessing. No generic advice.</p>
+      </div>
+      <div class="inside-card-simple">
+        <span class="inside-card-tag">Members Only</span>
+        <h3 class="inside-card-title">WMHQ Personal Portal</h3>
+        <p class="inside-card-desc">Your private app where your strategy, audits, tracking, and progress <strong>live in one place.</strong> Submit work, review your patterns, track your sales and content, and keep your next moves organised. Think of it as your business HQ — not a course dashboard, a working tool. Because <strong>if you can't see what's happening in your business, you can't scale it.</strong></p>
+      </div>
+      <div class="inside-card-simple">
+        <span class="inside-card-tag">Monthly · Live</span>
+        <h3 class="inside-card-title">Signature Masterclass Series</h3>
+        <p class="inside-card-desc">Each month, a <strong>live 60–90 minute masterclass</strong> on one focused area: content that converts, buyer psychology, offer positioning, sales systems, income ceilings, or CEO identity. Replay included. <strong>A fresh strategic and energetic focus every month without buying another course.</strong></p>
+      </div>
+      <div class="inside-card-simple">
+        <span class="inside-card-tag">Biannual · Members Only</span>
+        <h3 class="inside-card-title">Virtual VIP Workshop</h3>
+        <p class="inside-card-desc">Twice a year, a <strong>focused 4-hour virtual workshop</strong> to review your business, refine your next season, and map the strategy, identity, and capacity required for your next six months. You leave with <strong>decisions, direction, and momentum.</strong></p>
+      </div>
+      <div class="inside-card-simple">
+        <span class="inside-card-tag">Always Growing</span>
+        <h3 class="inside-card-title">WMHQ Vault</h3>
+        <p class="inside-card-desc">Trainings, worksheets, templates, frameworks, prompts, meditations, and implementation tools across messaging, sales, visibility, offer refinement, identity work, and nervous system capacity. <strong>Not more information — the exact tools for the specific edge you're hitting.</strong></p>
+      </div>
+    </div>
+    <div style="text-align:center;padding:40px 0 0;">
+      <a href="#pricing" class="btn-primary" style="background:#3D0A10;color:var(--stone);">Join WMHQ Membership</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="results">
+  <div class="container-wide">
+    <p class="section-eyebrow">Member Results</p>
+    <h2 class="section-h2">The proof is in the portfolio.</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <span class="testimonial-result">$8,400 Cash in 2 Weeks</span>
+        <p class="testimonial-quote">"Enrolment has officially closed, and we have 7 women inside the container."</p>
+        <p class="testimonial-author">A · Service Provider</p>
+      </div>
+      <div class="testimonial-card">
+        <span class="testimonial-result">$42K Month in 5 Months</span>
+        <p class="testimonial-quote">"I closed it with a $42K month with a business that pulls my heart strings everyday and is only about 5 months young."</p>
+        <p class="testimonial-author">I · Style & Fashion Director</p>
+      </div>
+      <div class="testimonial-card">
+        <span class="testimonial-result">Stopped the Sabotage Cycle</span>
+        <p class="testimonial-quote">"With Jess's guidance I can 10000% say it was a subconscious thing. I had a fear of being seen… now I make choices that allow me to really come out of my shell."</p>
+        <p class="testimonial-author">V · Activewear Brand Founder</p>
+      </div>
+      <div class="testimonial-card">
+        <span class="testimonial-result">Content Shift</span>
+        <p class="testimonial-quote">"Because damn the shift in my content has been insane!! My views have significantly increased, my comments, saves and follows also!! It's crazy how it's just one tweak (working on your fears) that can really change the whole game!!"</p>
+        <p class="testimonial-author">E · Manifestation Coach</p>
+      </div>
+      <div class="testimonial-card">
+        <span class="testimonial-result">Identity Shift</span>
+        <p class="testimonial-quote">"Ever since I joined WMHQ I've done a lot of the work when it comes to changing mindset, leaving the old me behind and working on the woman I want to become and who I am deep down without limiting myself. I used to make myself small aaaall the time. Too scared to speak my mind, to set boundaries."</p>
+        <p class="testimonial-author">E · Eyelash Product Founder</p>
+      </div>
+      <div class="testimonial-card">
+        <span class="testimonial-result">Hitting KPIs Consistently</span>
+        <p class="testimonial-quote">"I'm finally hitting my KPIs ($$ and bookings) over 2–3 weeks now, which feels insane! I'm feeling really really good about everything. But I feel a bit of discomfort in this, so I'm going to hit up the subconscious modules. The feeling is like anticipating the drop of a rollercoaster — like that feeling!"</p>
+        <p class="testimonial-author">J · Skin Boutique Owner</p>
+      </div>
+    </div>
+    <div style="text-align:center;padding:40px 0 0;">
+      <a href="#pricing" class="btn-primary" style="background:#3D0A10;color:var(--stone);">Join WMHQ Membership</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<!-- FOR YOU: YES -->
+<!-- FOR YOU / NOT FOR YOU -->
+<section class="for-combined">
+  <div class="container">
+    <p class="section-eyebrow" style="color:rgba(241,235,235,0.45);">Is This For You?</p>
+    <h2 class="section-h2" style="color:var(--stone);" id="knowLabel"></h2>
+    <div class="for-split">
+
+      <div class="for-col for-col-yes">
+        <div class="for-col-header">
+          <span class="for-col-tag for-col-tag-yes">✓ This is for you</span>
+        </div>
+        <ul class="for-list">
+          <li><span class="for-icon yes">✓</span><div><strong>You're already making money — but income still feels like a mood swing.</strong><p>You've had $20K–$30K+ months, but can't predictably repeat them.</p></div></li>
+          <li><span class="for-icon yes">✓</span><div><strong>Your content gets attention. But attention isn't converting.</strong><p>Saves, DMs, "this hit" — but not consistent buyers.</p></div></li>
+          <li><span class="for-icon yes">✓</span><div><strong>You have the offer and the proof. Every launch still feels like a battle.</strong><p>Dragging people across the line with your bare hands.</p></div></li>
+          <li><span class="for-icon yes">✓</span><div><strong>Visibility is the next move — but your nervous system disagrees.</strong><p>The moment you think about being louder, your body starts saying no.</p></div></li>
+          <li><span class="for-icon yes">✓</span><div><strong>You hit a big month, then sabotage it.</strong><p>Get sick. Go quiet. Lower your prices. Rework the strategy.</p></div></li>
+          <li><span class="for-icon yes">✓</span><div><strong>You don't need another download. You need the room.</strong><p>Strategy, systems, sales support, and identity work — together.</p></div></li>
+        </ul>
+      </div>
+
+      <div class="for-col for-col-no">
+        <div class="for-col-header">
+          <span class="for-col-tag for-col-tag-no">✗ This is not for you</span>
+        </div>
+        <ul class="for-list">
+          <li><span class="for-icon no">✗</span><div><strong>You haven't made consistent revenue yet.</strong><p>You need offer foundations before deeper scale work.</p></div></li>
+          <li><span class="for-icon no">✗</span><div><strong>You're pre-$5K months.</strong><p>WMHQ is built for women who already have traction.</p>
+            <div class="for-disclaimer-toggle" id="disclaimerToggle" role="button" tabindex="0" aria-expanded="false">
+              <span>What if I'm working full-time?</span>
+              <svg width="10" height="7" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg>
+            </div>
+            <div class="for-disclaimer-body" id="disclaimerBody">
+              <p class="for-disclaimer-text">If you're currently in a full-time job and building your business on the side, you can still join, but only if you're serious about becoming the founder and can dedicate 2 to 4 hours per week to implementation, calls, content, and the work.</p>
+              <p class="for-disclaimer-text">If you're pre-revenue, still trying to validate your first offer, or don't currently have the time or capacity to use the space properly, this probably isn't the right fit yet.</p>
+            </div>
+          </div></li>
+          <li><span class="for-icon no">✗</span><div><strong>You want someone to build it for you.</strong><p>WMHQ won't write your content or do the work on your behalf.</p></div></li>
+          <li><span class="for-icon no">✗</span><div><strong>You want accountability but not the internal work.</strong><p>If you won't look at the identity and visibility patterns pulling you back, this won't move the needle.</p></div></li>
+          <li><span class="for-icon no">✗</span><div><strong>You want more sales but not more responsibility.</strong><p>Scaling requires owning your message, decisions, energy, and leadership.</p></div></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <p class="section-eyebrow">Your Investment</p>
+    <h2 class="section-h2">Choose how you join.</h2>
+
+    <!-- CURRENCY SWITCHER -->
+    <div class="currency-wrap">
+      <button class="currency-btn active" data-currency="AUD">AUD</button>
+      <button class="currency-btn" data-currency="USD">USD</button>
+      <button class="currency-btn" data-currency="EUR">EUR</button>
+    </div>
+
+    <!-- TOGGLE -->
+    <div class="vip-toggle-wrap">
+      <span class="vip-toggle-label">Standard</span>
+      <button class="vip-toggle-btn" id="vipToggle" aria-pressed="false" role="switch">
+        <span class="vip-toggle-track"><span class="vip-toggle-thumb"></span></span>
+      </button>
+      <span class="vip-toggle-label vip-label-right">I want VIP <span class="vip-badge">✦ Upgrade</span></span>
+    </div>
+
+    <p class="pricing-anchor">Most women spend $3K–$10K on courses that don't address the real problem. WMHQ Membership is $400/month.</p>
+
+    <div class="pricing-cards">
+      <!-- 6 MONTH CARD -->
+      <div class="pricing-card" id="card6">
+        <span class="pricing-term-label">6 Months</span>
+        <p class="pricing-card-price"><sup>$</sup><span class="price-num" id="price6" data-standard="450" data-vip="1400">450</span></p>
+        <p class="pricing-card-term">AUD per month · 6-month access</p>
+        <p class="pricing-card-saving" id="saving6">Total $2,700 AUD</p>
+        <div class="pricing-divider"></div>
+        <div class="pricing-bonus">
+          <span class="pricing-bonus-label">Bonus</span>
+          <span class="pricing-bonus-text">45-minute onboarding call with Jess</span>
+        </div>
+        <ul id="list6">
+          <li><span class="tick">✓</span>Weekly live call, alternating business mastermind and subconscious mastery</li>
+          <li><span class="tick">✓</span>Personalised audits from Jess</li>
+          <li><span class="tick">✓</span>Monthly Signature Masterclass</li>
+          <li><span class="tick">✓</span>WMHQ Personal Portal access</li>
+          <li><span class="tick">✓</span>WMHQ Vault library access</li>
+          <li><span class="tick">✓</span>Biannual Virtual VIP Workshop</li>
+          <li class="vip-inclusion" style="display:none"><span class="tick vip-tick">✦</span><strong>1x 90-min private call per month with Jess</strong></li>
+          <li class="vip-inclusion" style="display:none"><span class="tick vip-tick">✦</span><strong>1x Private shared working doc with Jess</strong></li>
+          <li class="vip-inclusion" style="display:none"><span class="tick vip-tick">✦</span><strong>1x 4-hour private VIP workshop with Jess</strong></li>
+        </ul>
+        <a href="https://www.jessicapinili.com/offers/2xQreoAr/checkout" class="btn-pricing" id="cta6" target="_blank">Join for 6 Months</a>
+      </div>
+
+      <!-- 12 MONTH CARD -->
+      <div class="pricing-card featured" id="card12">
+        <span class="pricing-best-value">Best Value</span>
+        <span class="pricing-term-label">12 Months</span>
+        <p class="pricing-card-price"><sup>$</sup><span class="price-num" id="price12" data-standard="400" data-vip="1200">400</span></p>
+        <p class="pricing-card-term">AUD per month · 12-month access</p>
+        <p class="pricing-card-saving" id="saving12">Save $600 vs 6 months</p>
+        <div class="pricing-divider"></div>
+        <div class="pricing-bonus">
+          <span class="pricing-bonus-label">Bonus</span>
+          <span class="pricing-bonus-text">45-minute onboarding call with Jess</span>
+        </div>
+        <ul id="list12">
+          <li><span class="tick">✓</span>Weekly live call, alternating business mastermind and subconscious mastery</li>
+          <li><span class="tick">✓</span>Personalised audits from Jess</li>
+          <li><span class="tick">✓</span>Monthly Signature Masterclass</li>
+          <li><span class="tick">✓</span>WMHQ Personal Portal access</li>
+          <li><span class="tick">✓</span>WMHQ Vault library access</li>
+          <li><span class="tick">✓</span>Biannual Virtual VIP Workshop</li>
+          <li class="vip-inclusion" style="display:none"><span class="tick vip-tick">✦</span><strong>1x 90-min private call per month with Jess</strong></li>
+          <li class="vip-inclusion" style="display:none"><span class="tick vip-tick">✦</span><strong>1x Private shared working doc with Jess</strong></li>
+          <li class="vip-inclusion" style="display:none"><span class="tick vip-tick">✦</span><strong>2x 4-hour private VIP workshops with Jess</strong></li>
+        </ul>
+        <a href="https://www.jessicapinili.com/offers/wyacfFGV/checkout" class="btn-pricing" id="cta12" target="_blank">Join for 12 Months</a>
+      </div>
+    </div>
+    <p class="pricing-note">Questions? DM <a href="https://instagram.com/jesspinili" target="_blank" style="color:var(--deep-red);text-decoration:underline;text-underline-offset:2px;">@jesspinili on Instagram by clicking here</a> before you join.</p>
+
+    <!-- WHO HAVE I WORKED WITH ACCORDION -->
+    <div class="worked-with" id="workedWith">
+      <button class="worked-with-toggle" id="workedWithToggle" aria-expanded="false">
+        <span>Who have I worked with?</span>
+        <span class="worked-with-arrow">&#8964;</span>
+      </button>
+      <div class="worked-with-body" id="workedWithBody">
+        <div class="worked-with-tags">
+          <span>Business Coaches</span><span>Marketing Agency Owners</span><span>Activewear Brand Founders</span><span>Wellness Studio Owners</span><span>Skincare Product Founders</span><span>Personal Trainers</span><span>Nutrition Coaches</span><span>Life Coaches</span><span>Mindset Coaches</span><span>Social Media Managers</span><span>Content Creators</span><span>Beauty Business Owners</span><span>E-commerce Founders</span><span>Podcast Hosts</span><span>Spiritual Business Mentors</span><span>Online Course Creators</span><span>Brand Photographers</span><span>Copywriters</span><span>Consultants</span><span>Service-Based Entrepreneurs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guarantee-section">
+  <div class="container">
+    <div class="guarantee-box">
+      <div class="guarantee-icon-col">
+        <div class="guarantee-icon-diamond" style="font-size:26px;background:transparent;border:none;">🤝🏽</div>
+        <div class="guarantee-icon-line"></div>
+      </div>
+      <div>
+        <span class="guarantee-eyebrow" id="promiseLabel"></span>
+        <h3 class="guarantee-title">I'm invested in your results.</h3>
+        <p class="guarantee-text">Do the work, get the result. Simple. Attend your onboarding call. Show up to 4 live calls in your first 60 days. Submit at least two audits. If you do all three and still don't have a clearer path to consistent revenue, you'll receive 2 private 1:1 support calls over the following 2 months, at no&nbsp;extra&nbsp;cost.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIO -->
+<section class="bio-section">
+  <div class="container">
+    <div class="bio-inner">
+      <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2162592122/settings_images/5b1abd-4cf-cfd7-fe14-112df25a3f_WMHQ_Mockups_11_.png" alt="Jessica Pinili" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:12px;display:block;">
+      <div class="bio-content">
+        <p class="section-eyebrow">Who Built This</p>
+        <h2>Hi, I'm Jess.</h2>
+
+        <p>I built WMHQ because I watched women, including myself, hit a ceiling strategy couldn't fix.</p>
+        <p>I had the offer. The audience. The clients. The proof. The business made money. The reputation grew. The buyers kept coming.</p>
+        <p>And still, I knew I was operating smaller than my capacity.</p>
+        <p><strong>So I asked the question I kept avoiding:</strong></p>
+        <p><strong><em>If I already know what to do, why am I not doing it?</em></strong></p>
+        <p>The answer wasn't more strategy. It was identity.</p>
+        <p>My business was still built around the woman I was at $10K months. My nervous system was wired to the version of me still proving she could do this. My subconscious was keeping me where growth felt exposed and staying the same felt safe.</p>
+        <p>So I built WMHQ.</p>
+        <p>A space for women with real businesses. Where strategy assumes you have buyers. Where identity work is built for scaling. Where the room holds you to the woman you're becoming, not the woman you've been.</p>
+        <p>Because the next revenue level was never about doing more. It was about becoming the woman who can hold it.</p>
+        <p><strong>Welcome to WMHQ.</strong><br><em>Big Love,</em> Jess xo</p>
+        <div class="bio-socials">
+          <a href="https://instagram.com/jesspinili" target="_blank" class="bio-social-link" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://tiktok.com/@jesspinili" target="_blank" class="bio-social-link" aria-label="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          </a>
+          <a href="https://youtube.com/@jesspinili" target="_blank" class="bio-social-link" aria-label="YouTube">
+            <svg width="22" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5a3 3 0 0 0-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <p class="section-eyebrow">Questions</p>
+    <h2 class="section-h2">Before you join.</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-toggle" aria-expanded="false"><span>Who is this actually for?</span><span class="faq-icon"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg></span></button>
+        <div class="faq-body"><p class="faq-a">WMHQ is for female online business owners making inconsistent $5K–$35K months with a proven offer and real client results. If you know the next level requires stronger strategy, sales systems, and subconscious identity work, not another random offer or "post more" plan, this is for you.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" aria-expanded="false"><span>How is this different from other coaching memberships?</span><span class="faq-icon"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg></span></button>
+        <div class="faq-body"><p class="faq-a">WMHQ fixes the reason you're not using what you already know. You get the strategy, the sales systems, the content direction, and the subconscious work required to actually execute without disappearing, spiralling, undercharging, or sabotaging the result. It's not strategy with a mindset bonus.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" aria-expanded="false"><span>How much time do I need to commit each week?</span><span class="faq-icon"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg></span></button>
+        <div class="faq-body"><p class="faq-a">Minimum engagement is the weekly call (approximately 60 minutes). Most members spend 2-4 hours per week including the call, audits, and portal work. Replays are included for every call.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" aria-expanded="false"><span>Is this live, or is it all pre-recorded?</span><span class="faq-icon"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg></span></button>
+        <div class="faq-body"><p class="faq-a">WMHQ is live-first. Weekly calls are live. Masterclasses are live. Replays are available inside your portal. You get both the energy of real-time access and the flexibility of replays.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" aria-expanded="false"><span>What happens after my 6 or 12 month term?</span><span class="faq-icon"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg></span></button>
+        <div class="faq-body"><p class="faq-a">After your minimum 6 or 12 month membership term is complete, your membership will automatically continue on a month-to-month basis. You may cancel anytime after your minimum term has been completed by providing 30 days written notice via email to <a href="mailto:admin@womanmasteryhq.com" style="color:var(--deep-red);text-decoration:underline;">admin@womanmasteryhq.com</a>. Cancellation requests must be sent by email and will only apply once the minimum membership term has been fulfilled.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" aria-expanded="false"><span>Can I get a refund if it's not for me?</span><span class="faq-icon"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg></span></button>
+        <div class="faq-body"><p class="faq-a">No. Due to the digital, coaching, mentorship, and community-based nature of Woman Mastery HQ, all payments are final and non-refundable under any circumstances. Please read the full <a href="https://www.jessicapinili.com/jpinili-terms-conditions" target="_blank" style="color:var(--deep-red);text-decoration:underline;">Terms &amp; Conditions here</a>.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TESTIMONIAL IMAGES -->
+<section class="testimonial-images-section">
+  <div class="testimonial-images-grid">
+    <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147575052/images/ae81c-baf2-2aa5-545d-7e58c754f57_Testimonials.png" alt="WMHQ Member Testimonial" class="testimonial-img">
+    <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147575052/images/3ed1fd1-b652-73e0-811e-ea1b683bb38_Testimonials_1_.png" alt="WMHQ Member Testimonial" class="testimonial-img">
+    <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147575052/images/ce4acc-5dbc-5745-65ac-b3d4db45e10_130.png" alt="WMHQ Member Testimonial" class="testimonial-img">
+  </div>
+</section>
+
+<script>
+(function() {
+  const track = document.getElementById('carouselTrack');
+  const prevBtn = document.getElementById('carouselPrev');
+  const nextBtn = document.getElementById('carouselNext');
+  const dotsContainer = document.getElementById('carouselDots');
+  const slides = track ? track.querySelectorAll('.carousel-slide') : [];
+  let current = 0;
+
+  if (!slides.length) return;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+
+  let startX = 0;
+  track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+  }, { passive: true });
+})();
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Woman Mastery HQ · Jessica Pinili</p>
+  <p style="margin-top:8px;"><a href="https://www.jessicapinili.com/jpinili-privacy-statement" target="_blank">Privacy Policy</a> · <a href="https://www.jessicapinili.com/jpinili-terms-conditions" target="_blank">Terms &amp; Conditions</a></p>
+</footer>
+
+<script>
+(function() {
+  // Value total and you-pay reveal
+  ['.value-total', '.value-you-pay'].forEach(sel => {
+    const el = document.querySelector(sel);
+    if (!el) return;
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { el.classList.add('revealed'); obs.unobserve(el); } });
+    }, { threshold: 0.2 });
+    obs.observe(el);
+  });
+
+  // Trust bar count-up
+  const counters = document.querySelectorAll('.count-up');
+  if (counters.length) {
+    const countObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.target);
+        const prefix = el.dataset.prefix || '';
+        const suffix = el.dataset.suffix || '';
+        const duration = 1200;
+        const steps = 40;
+        const increment = target / steps;
+        let current = 0;
+        let step = 0;
+        const ease = t => t < 0.5 ? 2*t*t : -1+(4-2*t)*t;
+        const timer = setInterval(() => {
+          step++;
+          const progress = ease(step / steps);
+          current = Math.round(progress * target);
+          el.textContent = prefix + current + suffix;
+          if (step >= steps) {
+            el.textContent = prefix + target + suffix;
+            clearInterval(timer);
+          }
+        }, duration / steps);
+        countObs.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => countObs.observe(c));
+  }
+
+  // Nav scroll-spy
+  const navLinks = document.querySelectorAll('.nav-link[data-section]');
+  const sections = ['transformation','inside','results','pricing','faq'].map(id => document.getElementById(id)).filter(Boolean);
+  function updateNav() {
+    const scrollY = window.scrollY + 80;
+    let active = null;
+    sections.forEach(sec => {
+      if (sec.offsetTop <= scrollY) active = sec.id;
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.dataset.section === active);
+    });
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+
+  // Currency switcher
+  const rates = { AUD: 1, USD: 0.63, EUR: 0.58 };
+  const symbols = { AUD: '$', USD: '$', EUR: '€' };
+  const labels = { AUD: 'AUD', USD: 'USD', EUR: 'EUR' };
+  let activeCurrency = 'AUD';
+
+  // All price elements with base AUD values
+  const priceTargets = [
+    { el: document.getElementById('price6'), aud_standard: 450, aud_vip: 1400 },
+    { el: document.getElementById('price12'), aud_standard: 400, aud_vip: 1200 }
+  ];
+
+  function convertPrice(aud) {
+    return Math.round(aud * rates[activeCurrency]);
+  }
+
+  function updateCurrencyDisplay() {
+    const sym = symbols[activeCurrency];
+    const isVip = document.getElementById('vipToggle')?.getAttribute('aria-pressed') === 'true';
+
+    // Update sup $ symbols on pricing cards
+    document.querySelectorAll('.pricing-card-price sup').forEach(sup => {
+      sup.textContent = sym;
+    });
+
+    priceTargets.forEach(pt => {
+      if (!pt.el) return;
+      const base = isVip ? pt.aud_vip : pt.aud_standard;
+      const converted = convertPrice(base);
+      pt.el.textContent = converted.toLocaleString();
+      // Update data attributes so VIP toggle still works correctly
+      pt.el.dataset.standard = Math.round(pt.aud_standard * rates[activeCurrency]);
+      pt.el.dataset.vip = Math.round(pt.aud_vip * rates[activeCurrency]);
+    });
+
+    // Update term labels and saving lines
+    const save6 = document.getElementById('saving6');
+    const save12 = document.getElementById('saving12');
+    if (save6) {
+      if (isVip) { save6.textContent = 'Save $2,400 vs VIP 12 months'; }
+      else { save6.textContent = 'Total ' + sym + Math.round(2700 * rates[activeCurrency]).toLocaleString() + ' ' + labels[activeCurrency]; }
+    }
+    if (save12) {
+      if (isVip) { save12.textContent = 'Save ' + sym + Math.round(1200 * rates[activeCurrency]).toLocaleString() + ' vs VIP 6 months'; }
+      else { save12.textContent = 'Save ' + sym + Math.round(600 * rates[activeCurrency]).toLocaleString() + ' vs 6 months'; }
+    }
+
+    // Show/hide approx note
+    let note = document.getElementById('currencyNote');
+    if (activeCurrency !== 'AUD') {
+      if (!note) {
+        note = document.createElement('p');
+        note.id = 'currencyNote';
+        note.className = 'currency-note';
+        note.textContent = 'Approximate conversion. Charged in AUD at checkout.';
+        document.querySelector('.pricing-cards').before(note);
+      }
+      note.style.display = 'block';
+    } else {
+      if (note) note.style.display = 'none';
+    }
+  }
+
+  document.querySelectorAll('.currency-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.currency-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeCurrency = btn.dataset.currency;
+      updateCurrencyDisplay();
+    });
+  });
+
+  // VIP Toggle
+  const vipBtn = document.getElementById('vipToggle');
+  if (vipBtn) {
+    function animatePrice(el, from, to) {
+      const duration = 600;
+      const steps = 30;
+      const diff = to - from;
+      let step = 0;
+      const ease = t => t < 0.5 ? 2*t*t : -1+(4-2*t)*t;
+      const timer = setInterval(() => {
+        step++;
+        const val = Math.round(from + diff * ease(step / steps));
+        el.textContent = val;
+        if (step >= steps) { el.textContent = to; clearInterval(timer); }
+      }, duration / steps);
+    }
+
+    vipBtn.addEventListener('click', () => {
+      const isVip = vipBtn.getAttribute('aria-pressed') === 'true';
+      const nowVip = !isVip;
+      vipBtn.setAttribute('aria-pressed', nowVip);
+
+      ['6','12'].forEach(id => {
+        const priceEl = document.getElementById('price' + id);
+        const savingEl = document.getElementById('saving' + id);
+        const card = document.getElementById('card' + id);
+        const from = parseInt(priceEl.dataset[nowVip ? 'standard' : 'vip']);
+        const to = parseInt(priceEl.dataset[nowVip ? 'vip' : 'standard']);
+        animatePrice(priceEl, from, to);
+
+        // Swap onboarding bonus text
+        const bonusText = card.querySelector('.pricing-bonus-text');
+        if (bonusText) {
+          bonusText.textContent = nowVip
+            ? '90-minute onboarding call with Jess'
+            : '45-minute onboarding call with Jess';
+        }
+
+        // Swap checkout URLs for VIP
+        const ctaEl = card.querySelector('.btn-pricing');
+        if (ctaEl) {
+          if (id === '6') {
+            ctaEl.href = nowVip
+              ? 'https://www.jessicapinili.com/offers/p3PGzPwv/checkout'
+              : 'https://www.jessicapinili.com/offers/2xQreoAr/checkout';
+          }
+          if (id === '12') {
+            ctaEl.href = nowVip
+              ? 'https://www.jessicapinili.com/offers/sCLKbnFg/checkout'
+              : 'https://www.jessicapinili.com/offers/wyacfFGV/checkout';
+          }
+        }
+
+        // Collapse/expand standard inclusions
+        const ul = card.querySelector('ul');
+        if (ul) {
+          const standardItems = Array.from(ul.querySelectorAll('li:not(.vip-inclusion)'));
+          if (nowVip) {
+            standardItems.forEach((li, i) => {
+              if (i === 0) {
+                li.innerHTML = '<span class="tick">✓</span>All WMHQ Inclusions';
+              } else {
+                li.style.display = 'none';
+              }
+            });
+          } else {
+            const originals = [
+              'Weekly live call, alternating business mastermind and subconscious mastery',
+              'Personalised audits from Jess',
+              'Monthly Signature Masterclass',
+              'WMHQ Personal Portal access',
+              'WMHQ Vault library access',
+              'Biannual Virtual VIP Workshop'
+            ];
+            standardItems.forEach((li, i) => {
+              li.style.display = 'flex';
+              li.innerHTML = '<span class="tick">✓</span>' + originals[i];
+            });
+          }
+        }
+
+        if (id === '6') savingEl.textContent = nowVip ? 'Save $2,400 vs VIP 12 months' : 'Total $2,700 AUD';
+        if (id === '12') savingEl.textContent = nowVip ? 'Save $2,400 vs VIP 6 months' : 'Save $600 vs 6 months';
+
+        card.classList.toggle('vip-active', nowVip);
+
+        document.querySelectorAll('#list' + id + ' .vip-inclusion').forEach(li => {
+          if (nowVip) {
+            li.style.display = 'flex';
+            li.classList.add('showing');
+          } else {
+            li.style.display = 'none';
+            li.classList.remove('showing');
+          }
+        });
+      });
+    });
+  }
+
+  // Still Thinking accordion
+  const thinkingToggle = document.getElementById('thinkingToggle');
+  const thinkingBody = document.getElementById('thinkingBody');
+  if (thinkingToggle && thinkingBody) {
+    thinkingToggle.addEventListener('click', () => {
+      const open = thinkingBody.classList.toggle('open');
+      thinkingToggle.setAttribute('aria-expanded', open);
+    });
+    thinkingToggle.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); thinkingToggle.click(); }
+    });
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const body = btn.nextElementSibling;
+      const isOpen = body.classList.contains('open');
+      document.querySelectorAll('.faq-body.open').forEach(b => {
+        b.classList.remove('open');
+        b.previousElementSibling.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        body.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // Worked with accordion
+  const wwToggle = document.getElementById('workedWithToggle');
+  const wwBody = document.getElementById('workedWithBody');
+  if (wwToggle && wwBody) {
+    wwToggle.addEventListener('click', () => {
+      const open = wwBody.classList.toggle('open');
+      wwToggle.setAttribute('aria-expanded', open);
+    });
+  }
+
+  // Inside cards flip on scroll
+  const insideCards = document.querySelectorAll('.inside-card');
+  if (insideCards.length) {
+    const flipObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const card = entry.target;
+          const delay = Array.from(insideCards).indexOf(card) * 100;
+          setTimeout(() => card.classList.add('flipped'), delay);
+          flipObs.unobserve(card);
+        }
+      });
+    }, { threshold: 0.25 });
+    insideCards.forEach(c => flipObs.observe(c));
+  }
+
+  // TL;DR typewriter
+  const tldr = document.getElementById('tldrLabel');
+  if (tldr) {
+    const text = 'TL;DR';
+    let typed = false;
+    const typeObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !typed) {
+          typed = true;
+          tldr.classList.add('typing');
+          let i = 0;
+          const type = () => {
+            if (i <= text.length) {
+              tldr.textContent = text.slice(0, i);
+              i++;
+              setTimeout(type, i === 1 ? 300 : 90);
+            } else {
+              tldr.classList.replace('typing', 'done');
+            }
+          };
+          setTimeout(type, 200);
+          typeObs.unobserve(tldr);
+        }
+      });
+    }, { threshold: 0.5 });
+    typeObs.observe(tldr);
+  }
+
+  // The WMHQ Promise typewriter
+  const promiseLabel = document.getElementById('promiseLabel');
+  if (promiseLabel) {
+    const pText = 'The WMHQ Promise';
+    let pTyped = false;
+    const pObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !pTyped) {
+          pTyped = true;
+          promiseLabel.classList.add('typing');
+          let i = 0;
+          const type = () => {
+            if (i <= pText.length) {
+              promiseLabel.textContent = pText.slice(0, i);
+              i++;
+              setTimeout(type, i === 1 ? 300 : 55);
+            } else {
+              promiseLabel.classList.replace('typing', 'done');
+            }
+          };
+          setTimeout(type, 300);
+          pObs.unobserve(promiseLabel);
+        }
+      });
+    }, { threshold: 0.5 });
+    pObs.observe(promiseLabel);
+  }
+
+  // Pillar cards fade-in
+  const pillarCards = document.querySelectorAll('.pillar-card');
+  if (pillarCards.length) {
+    const pillarObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const card = entry.target;
+          const delay = Array.from(pillarCards).indexOf(card) * 100;
+          setTimeout(() => card.classList.add('revealed'), delay);
+          pillarObs.unobserve(card);
+        }
+      });
+    }, { threshold: 0.15 });
+    pillarCards.forEach(c => pillarObs.observe(c));
+  }
+
+  // Problem cards scroll fade-in
+  const cards = document.querySelectorAll('.problem-card');
+  if (cards.length) {
+    const cardObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const card = entry.target;
+          const delay = Array.from(cards).indexOf(card) * 120;
+          setTimeout(() => card.classList.add('revealed'), delay);
+          cardObs.unobserve(card);
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(c => cardObs.observe(c));
+  }
+
+  // Value rows scroll fade-in
+  const rows = document.querySelectorAll('.value-row');
+  if (rows.length) {
+    const rowObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const row = entry.target;
+          const delay = Array.from(rows).indexOf(row) * 80;
+          setTimeout(() => row.classList.add('revealed'), delay);
+          rowObs.unobserve(row);
+        }
+      });
+    }, { threshold: 0.15 });
+    rows.forEach(r => rowObs.observe(r));
+  }
+
+  // Six counter count-up on scroll
+  const counter = document.getElementById('sixCounter');
+  const words = ['One','Two','Three','Four','Five','Six'];
+  if (counter) {
+    let triggered = false;
+    const numObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !triggered) {
+          triggered = true;
+          let i = 0;
+          counter.textContent = words[0];
+          const interval = setInterval(() => {
+            i++;
+            if (i >= words.length) { clearInterval(interval); return; }
+            counter.textContent = words[i];
+          }, 120);
+          numObs.unobserve(counter);
+        }
+      });
+    }, { threshold: 0.5 });
+    numObs.observe(counter);
+  }
+})();
+</script>
+
+<div id="socialToast">
+  <div class="toast-avatar" id="toastAvatar">S</div>
+  <div class="toast-text">
+    <span class="toast-name" id="toastName">Sophie from Melbourne</span>
+    <span class="toast-action">Joined WMHQ</span>
+  </div>
+  <div class="toast-dot"></div>
+</div>
+
+<script>
+(function() {
+  const members = [
+    'Sophie from Melbourne',
+    'Mia from Auckland',
+    'Olivia from Sydney',
+    'Chloe from Brisbane',
+    'Amelia from Perth',
+    'Isabella from London',
+    'Grace from Wellington',
+    'Hannah from Toronto',
+    'Emma from Dubai',
+    'Lily from Singapore',
+    'Ava from New York',
+    'Ella from Gold Coast',
+    'Ruby from Adelaide',
+    'Zoe from Vancouver',
+    'Charlotte from Manchester',
+    'Marlie from Adelaide',
+    'Isabel from Brisbane',
+    'Emelie from Sweden',
+    'Lauren from Perth'
+  ];
+
+  const toast = document.getElementById('socialToast');
+  const nameEl = document.getElementById('toastName');
+  const avatarEl = document.getElementById('toastAvatar');
+
+  let index = 0;
+
+  function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  const order = shuffle([...members]);
+
+  function showNext() {
+    if (index >= order.length) { index = 0; shuffle(order); }
+    const person = order[index++];
+    const first = person.split(' ')[0];
+    nameEl.textContent = person;
+    avatarEl.textContent = first[0].toUpperCase();
+    toast.classList.remove('show');
+    void toast.offsetWidth;
+    toast.classList.add('show');
+    setTimeout(showNext, 7000);
+  }
+
+  setTimeout(showNext, 6000);
+})();
+</script>
+
+<div id="jpBot">
+  <div id="jpBotWindow">
+    <div class="bot-header">
+      <div class="bot-header-avatar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2C6D0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3"/><path d="M12 4V2"/><circle cx="12" cy="2" r="0.5" fill="#F2C6D0" stroke="none"/><rect x="7" y="10" width="10" height="8" rx="3"/><path d="M9 14h.01M15 14h.01"/><path d="M10 17.5c.5.4 1 .6 2 .6s1.5-.2 2-.6"/><path d="M7 13H5a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h2"/><path d="M17 13h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2"/></svg></div>
+      <div class="bot-header-text">
+        <span class="bot-header-name">JP Bot</span>
+        <span class="bot-header-status"><span class="bot-status-dot"></span>Ask me anything about WMHQ</span>
+      </div>
+      <button class="bot-close" id="jpBotClose">✕</button>
+    </div>
+    <div class="bot-messages" id="botMessages"></div>
+    <div class="bot-qs" id="botQs"></div>
+  </div>
+  <div id="botNudge">Have a question? Ask me! 👋</div>
+  <button id="jpBotToggle" aria-label="Open JP Bot">
+    <span class="bot-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F2C6D0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3"/><path d="M12 4V2"/><circle cx="12" cy="2" r="0.5" fill="#F2C6D0" stroke="none"/><rect x="7" y="10" width="10" height="8" rx="3"/><path d="M9 14h.01M15 14h.01"/><path d="M10 17.5c.5.4 1 .6 2 .6s1.5-.2 2-.6"/><path d="M7 13H5a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h2"/><path d="M17 13h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2"/></svg></span>
+    <span>JP Bot</span>
+  </button>
+</div>
+
+<script>
+(function() {
+  const QA = [
+    {
+      q: "What is WMHQ?",
+      a: "Woman Mastery HQ is a membership for female online business owners making inconsistent $5K–$35K months. It combines business strategy, content systems, sales psychology, and subconscious identity work so you can scale without constantly rebuilding."
+    },
+    {
+      q: "How much does it cost?",
+      a: "WMHQ is $450 AUD/month for 6-month access, or $400 AUD/month for 12-month access. Both include a bonus 45-minute onboarding call with Jess."
+    },
+    {
+      q: "What's included?",
+      a: "Weekly live calls with Jess (alternating business mastermind and subconscious mastery), personalised audits, monthly Signature Masterclass, WMHQ Personal Portal, WMHQ Vault library, and the Biannual Virtual VIP Workshop."
+    },
+    {
+      q: "Is there a refund policy?",
+      a: "All payments are final and non-refundable due to the digital, coaching, and community nature of WMHQ. You can read the full Terms & Conditions at jessicapinili.com/jpinili-terms-conditions."
+    },
+    {
+      q: "How do calls work?",
+      a: "There's one live call every week, alternating between a business mastermind and a subconscious deep dive. Both are with Jess directly. Replays are included if you can't attend live."
+    },
+    {
+      q: "Who is this for?",
+      a: "WMHQ is for female online business owners with a proven offer and real client results, making inconsistent $5K–$35K months. If you're pre-revenue or still building your first offer, it's not the right fit yet."
+    },
+    {
+      q: "What happens after my term ends?",
+      a: "After your minimum 6 or 12 month term, membership automatically continues month-to-month. You can cancel with 30 days written notice via email to admin@womanmasteryhq.com."
+    },
+    {
+      q: "How is this different from other memberships?",
+      a: "WMHQ fixes the reason you're not using what you already know. You get strategy, sales systems, content direction, and the subconscious work to actually execute without disappearing, spiralling, or sabotaging results. It's not strategy with a mindset bonus."
+    },
+    {
+      q: "Can I speak to Jess before joining?",
+      a: "Yes! DM @jesspinili on Instagram with any questions before you join."
+    },
+    {
+      q: "What's the WMHQ Vault?",
+      a: "The Vault is a growing library of trainings, templates, and frameworks across messaging, sales systems, visibility, and subconscious mastery. Everything is searchable and organised by pillar."
+    },
+    {
+      q: "Do I need to be making a certain amount to join?",
+      a: "WMHQ is best suited for female online business owners already making $5K–$35K months inconsistently, with a proven offer, real client results, and a desire to scale.\n\nIf you're in a full-time job and building your business on the side, you can still join — but only if you're serious about becoming the founder and can dedicate 2–4 hours per week to implementation.\n\nIf you're pre-revenue, still validating your first offer, or don't currently have the time or capacity to use the space properly, this probably isn't the right fit yet."
+    },
+    {
+      q: "What if I can't attend every live call?",
+      a: "You'll get access to replays, but the more you participate live, the more you'll get out of the membership. The goal isn't passive consumption. It's implementation, audit, refinement, and support."
+    },
+    {
+      q: "How much time do I need each week?",
+      a: "Expect to commit around 2–4 hours per week depending on how deeply you want to use the space. That may include calls, audits, implementation, watching trainings, asking questions, refining content, or working through subconscious patterns affecting your business."
+    },
+    {
+      q: "Do I get personal support from Jess?",
+      a: "Yes. WMHQ is not just a content library. You'll receive support through live calls, audits, community interaction, workshopping, and strategic guidance so you're not left figuring everything out alone."
+    },
+    {
+      q: "Is this a course or a membership?",
+      a: "WMHQ is a mentorship membership. You get access to trainings and resources inside the Vault, but the real value is the ongoing support, live coaching, audits, strategy, and identity work."
+    },
+    {
+      q: "Will this help me with content?",
+      a: "Yes. Content is one of the core pillars inside WMHQ. You'll work on messaging, positioning, content strategy, buyer psychology, visibility, hooks, audits, and building content that actually leads people into a buying decision — not just content that gets saved and praised."
+    },
+    {
+      q: "Will this help me make more sales?",
+      a: "Yes, if you use the support. WMHQ is designed to help you create a clearer revenue plan, stronger sales ecosystem, sharper content, and better buyer pathways so your audience understands what you sell, why they need it, and why now."
+    },
+    {
+      q: "What if I'm already successful but inconsistent?",
+      a: "That's exactly who WMHQ is for. You may already have strong months, testimonials, a proven offer, and an audience — but your income still swings because the backend, content, sales process, and internal capacity aren't yet built for consistency. WMHQ helps you turn spikes into a baseline."
+    },
+    {
+      q: "Is WMHQ business coaching or mindset coaching?",
+      a: "Both. WMHQ combines business strategy, content, sales, messaging, revenue planning, subconscious identity work, and nervous system capacity. Because inconsistent income is rarely just a strategy problem — it's usually a strategy, identity, visibility, and execution problem happening at the same time."
+    }
+  ];
+
+  const toggle = document.getElementById('jpBotToggle');
+  const win = document.getElementById('jpBotWindow');
+  const closeBtn = document.getElementById('jpBotClose');
+  const messages = document.getElementById('botMessages');
+  const qsEl = document.getElementById('botQs');
+  const nudge = document.getElementById('botNudge');
+  let opened = false;
+  let nudgeShown = false;
+
+  function handleScroll() {
+    if (nudgeShown || win.classList.contains('open')) return;
+    const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    if (scrolled > 0.18) {
+      nudgeShown = true;
+      nudge.classList.add('show');
+      setTimeout(() => {
+        nudge.classList.remove('show');
+        nudge.classList.add('hide');
+      }, 4500);
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }
+  window.addEventListener('scroll', handleScroll, { passive: true });
+
+  function addMessage(text, role) {
+    const b = document.createElement('div');
+    b.className = 'bot-bubble ' + role;
+    b.textContent = text;
+    messages.appendChild(b);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function showQuestions() {
+    qsEl.innerHTML = '';
+    const label = document.createElement('p');
+    label.className = 'bot-qs-label';
+    label.textContent = 'Select a question';
+    qsEl.appendChild(label);
+    QA.forEach((item, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'bot-q-btn';
+      btn.textContent = item.q;
+      btn.addEventListener('click', () => {
+        addMessage(item.q, 'user');
+        setTimeout(() => {
+          addMessage(item.a, 'bot');
+          showBack();
+        }, 400);
+      });
+      qsEl.appendChild(btn);
+    });
+  }
+
+  function showBack() {
+    qsEl.innerHTML = '';
+    const back = document.createElement('button');
+    back.className = 'bot-back';
+    back.innerHTML = '← Ask another question';
+    back.addEventListener('click', showQuestions);
+    qsEl.appendChild(back);
+  }
+
+  function open() {
+    win.classList.add('open');
+    if (!opened) {
+      opened = true;
+      addMessage("Hi! I'm JP Bot. I can answer your questions about Woman Mastery HQ. What would you like to know?", 'bot');
+      showQuestions();
+    }
+  }
+
+  toggle.addEventListener('click', () => {
+    nudge.classList.remove('show');
+    nudge.classList.add('hide');
+    if (win.classList.contains('open')) {
+      win.classList.remove('open');
+    } else {
+      open();
+    }
+  });
+
+  closeBtn.addEventListener('click', () => win.classList.remove('open'));
+})();
+</script>
+
+<!-- EXIT INTENT POPUP -->
+<div id="exitPopupOverlay">
+  <div class="exit-popup-card">
+    <div class="exit-popup-accent"></div>
+    <div class="exit-popup-blob"></div>
+    <button class="exit-popup-close" id="exitClose">✕</button>
+    <div class="exit-popup-body">
+      <span class="exit-popup-eyebrow">Before you go</span>
+      <h2 class="exit-popup-headline">Not Ready For <em>WMHQ</em> Yet?</h2>
+      <p class="exit-popup-sub">One hour. Two phases. One breakthrough.<br>The clearest explanation of why your business has a ceiling and exactly how to raise it.</p>
+      <div class="exit-popup-form exit-kajabi-wrap">
+        <script src="https://www.jessicapinili.com/forms/2149602063/embed.js"></script>
+      </div>
+      <p class="exit-popup-footnote">A better next step if you're not ready to join WMHQ yet, but you know your business needs a higher standard of strategy, content, and leadership.</p>
+      <button class="exit-popup-dismiss" id="exitDismiss">I'll come back later</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const overlay = document.getElementById('exitPopupOverlay');
+  const closeBtn = document.getElementById('exitClose');
+  const dismissBtn = document.getElementById('exitDismiss');
+  let shown = false;
+
+  function showPopup() {
+    if (shown) return;
+    shown = true;
+    overlay.classList.add('active');
+  }
+
+  function hidePopup() {
+    overlay.classList.remove('active');
+  }
+
+  // Desktop: exit intent — mouse leaves toward top of viewport
+  document.addEventListener('mouseleave', (e) => {
+    if (e.clientY <= 10) showPopup();
+  });
+
+  // Mobile fallback: show after scrolling down then back up quickly
+  let lastY = 0;
+  let scrollCount = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (y < lastY - 200 && y > 400) scrollCount++;
+    if (scrollCount >= 2) showPopup();
+    lastY = y;
+  }, { passive: true });
+
+  closeBtn.addEventListener('click', hidePopup);
+  dismissBtn.addEventListener('click', hidePopup);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) hidePopup(); });
+})();
+</script>
+
+<!-- STICKY BONUS BADGE -->
+<div id="bonusBadge">
+  <a href="#pricing" id="bonusBadgeInner">
+    <span class="badge-eyebrow">Bonus</span>
+    <span class="badge-title">45-Min Onboarding Call with Jess</span>
+    <span class="badge-sub">Included when you join</span>
+  </a>
+  <button id="bonusBadgeClose" aria-label="Close">✕</button>
+</div>
+
+<script>
+(function() {
+  const badge = document.getElementById('bonusBadge');
+  const closeBtn = document.getElementById('bonusBadgeClose');
+  let visible = false;
+  let dismissed = false;
+
+  closeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    dismissed = true;
+    badge.style.opacity = '0';
+    badge.style.pointerEvents = 'none';
+  });
+
+  function checkBadge() {
+    if (dismissed) return;
+    const scrolled = window.scrollY > 300;
+    if (scrolled && !visible) { badge.style.opacity = '1'; badge.style.pointerEvents = 'auto'; visible = true; }
+    else if (!scrolled && visible) { badge.style.opacity = '0'; visible = false; }
+  }
+  badge.style.opacity = '0';
+  badge.style.transition = 'opacity 0.4s ease';
+  window.addEventListener('scroll', checkBadge, { passive: true });
+})();
+</script>
+
+<div id="readProgress"></div>
+
+<script>
+(function() {
+  const bar = document.getElementById('readProgress');
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const total = document.body.scrollHeight - window.innerHeight;
+    const pct = total > 0 ? (scrolled / total) * 100 : 0;
+    bar.style.width = Math.min(pct, 100) + '%';
+  }, { passive: true });
+})();
+</script>
+
+<script>
+(function() {
+  const audio = document.getElementById('bioAudioSrc');
+  const btn = document.getElementById('bioAudioBtn');
+  const icon = document.getElementById('bioAudioIcon');
+  const wrap = document.getElementById('bioAudio');
+  const progress = document.getElementById('bioAudioProgress');
+  const sub = wrap ? wrap.querySelector('.bio-audio-sub') : null;
+
+  if (!btn || !audio) return;
+
+  const playIcon = '<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M6 3.5L12 8l-6 4.5V3.5z"/></svg>';
+  const pauseIcon = '<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="4" y="3" width="3" height="10" rx="1"/><rect x="9" y="3" width="3" height="10" rx="1"/></svg>';
+
+  btn.addEventListener('click', () => {
+    if (audio.src && audio.src !== window.location.href) {
+      if (audio.paused) {
+        audio.play();
+        icon.innerHTML = pauseIcon;
+        wrap.classList.add('playing');
+        if (sub) sub.textContent = 'Playing…';
+      } else {
+        audio.pause();
+        icon.innerHTML = playIcon;
+        wrap.classList.remove('playing');
+        if (sub) sub.textContent = 'Paused · tap to resume';
+      }
+    } else {
+      // No audio yet — show placeholder message
+      if (sub) {
+        sub.textContent = 'Audio coming soon ♡';
+        setTimeout(() => { sub.textContent = '▶ 30 sec · you've scrolled this far, just press play'; }, 2200);
+      }
+    }
+  });
+
+  audio.addEventListener('timeupdate', () => {
+    if (audio.duration) {
+      progress.style.width = (audio.currentTime / audio.duration * 100) + '%';
+      const rem = Math.ceil(audio.duration - audio.currentTime);
+      if (sub && audio.duration) sub.textContent = rem + 's remaining';
+    }
+  });
+
+  audio.addEventListener('ended', () => {
+    icon.innerHTML = playIcon;
+    progress.style.width = '0%';
+    wrap.classList.remove('playing');
+    if (sub) sub.textContent = '▶ 30 sec · you've scrolled this far, just press play';
+  });
+})();
+</script>
+
+<script>
+(function() {
+  const headline = document.getElementById('heroHeadline');
+  const sub = document.getElementById('heroSub');
+  const visits = parseInt(localStorage.getItem('wmhq_visits') || '0') + 1;
+  localStorage.setItem('wmhq_visits', visits);
+
+  if (visits === 2 && headline && sub) {
+    headline.innerHTML = "You're here again because<br><em>part of you knows your current strategy isn't enough.</em>";
+    sub.textContent = "You didn't come back to read it again. You came back because you haven't said yes yet, and something in you knows why. That's exactly what WMHQ Membership fixes.";
+  }
+
+  if (visits >= 3) {
+    // Show welcome back banner instead of bonus badge
+    const banner = document.createElement('div');
+    banner.id = 'welcomeBackBanner';
+    banner.innerHTML = `
+      <span class="wb-dot"></span>
+      <span class="wb-text">Welcome back. Doors are still open.</span>
+      <a href="#pricing" class="wb-cta">Join Now →</a>
+      <button class="wb-close" id="wbClose">✕</button>
+    `;
+    document.body.prepend(banner);
+
+    document.getElementById('wbClose').addEventListener('click', () => {
+      banner.style.opacity = '0';
+      setTimeout(() => banner.remove(), 300);
+    });
+
+    // Hide bonus badge on third visit
+    const bonusBadge = document.getElementById('bonusBadge');
+    if (bonusBadge) bonusBadge.style.display = 'none';
+  }
+})();
+</script>
+
+<script>
+// CONFETTI ON CTA CLICK
+(function() {
+  const colors = ['#F2C6D0','#e8a0b0','#f7d4dc','#C9956A','#3D0A10','#F2C6D0','#fce4ec','#f48fb1'];
+
+  function launchConfetti(originX, originY) {
+    const count = 80;
+    for (let i = 0; i < count; i++) {
+      const el = document.createElement('div');
+      el.style.cssText = `
+        position: fixed;
+        left: ${originX}px;
+        top: ${originY}px;
+        width: ${Math.random() * 8 + 5}px;
+        height: ${Math.random() * 8 + 5}px;
+        background: ${colors[Math.floor(Math.random() * colors.length)]};
+        border-radius: ${Math.random() > 0.5 ? '50%' : '2px'};
+        pointer-events: none;
+        z-index: 999998;
+        opacity: 1;
+        transform: rotate(${Math.random() * 360}deg);
+      `;
+      document.body.appendChild(el);
+
+      const angle = (Math.random() * Math.PI * 2);
+      const velocity = Math.random() * 320 + 120;
+      const vx = Math.cos(angle) * velocity;
+      const vy = Math.sin(angle) * velocity - 200;
+      const gravity = 400;
+      const duration = Math.random() * 600 + 700;
+      const start = performance.now();
+
+      (function animate(now) {
+        const t = (now - start) / 1000;
+        if (t > duration / 1000) { el.remove(); return; }
+        const x = originX + vx * t;
+        const y = originY + vy * t + 0.5 * gravity * t * t;
+        const opacity = 1 - (t / (duration / 1000));
+        el.style.left = x + 'px';
+        el.style.top = y + 'px';
+        el.style.opacity = opacity;
+        el.style.transform = `rotate(${t * 360}deg)`;
+        requestAnimationFrame(animate);
+      })(start);
+    }
+  }
+
+  function handleCtaClick(e) {
+    const btn = e.currentTarget;
+    const rect = btn.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+    launchConfetti(x, y);
+  }
+
+  // Only fire confetti on actual checkout buttons
+  document.querySelectorAll('#cta6, #cta12').forEach(btn => {
+    btn.addEventListener('click', handleCtaClick);
+  });
+})();
+</script>
+
+<script>
+// EMAIL THIS PAGE
+(function() {
+  const btn = document.getElementById('emailPageBtn');
+  const input = document.getElementById('emailPageInput');
+  const form = document.getElementById('emailPageForm');
+  const confirm = document.getElementById('emailPageConfirm');
+  if (!btn || !input) return;
+
+  btn.addEventListener('click', () => {
+    const email = input.value.trim();
+    const name = document.getElementById('emailPageName')?.value.trim() || '';
+    if (!email || !email.includes('@')) {
+      input.style.borderColor = '#C4162E';
+      setTimeout(() => input.style.borderColor = '', 1200);
+      return;
+    }
+    const pageUrl = 'https://womanmasteryhq.com';
+    const subject = encodeURIComponent('WMHQ Membership — come back when you\'re ready');
+    const greeting = name ? 'Hi ' + name + ',\n\n' : '';
+    const body = encodeURIComponent(greeting + 'You asked me to send you this.\n\nWoman Mastery HQ Membership:\n' + pageUrl + '\n\nDoors are open. Come back when you\'re ready.');
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    form.style.display = 'none';
+    confirm.style.display = 'block';
+  });
+
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') btn.click();
+  });
+})();
+</script>
+
+<script>
+// ROI CALCULATOR
+(function() {
+  const slider = document.getElementById('roiSlider');
+  const currentEl = document.getElementById('roiCurrent');
+  if (!slider) return;
+
+  function fmt(n) { return '$' + Math.abs(n).toLocaleString(); }
+
+  function updateCard(gainEl, annualEl, val, target) {
+    const monthlyGain = Math.max(0, target - val);
+    const annualGain = monthlyGain * 12;
+    if (gainEl) gainEl.textContent = monthlyGain > 0 ? '+' + fmt(monthlyGain) + '/mo' : 'Already there ✓';
+    if (annualEl) annualEl.textContent = monthlyGain > 0 ? fmt(annualGain) : 'Keep scaling';
+  }
+
+  function update() {
+    const val = parseInt(slider.value);
+    const min = 5000, max = 35000;
+    const pct = ((val - 5000) / (50000 - 5000) * 100).toFixed(1);
+    slider.style.setProperty('--pct', pct + '%');
+    if (currentEl) currentEl.textContent = fmt(val);
+
+    updateCard(document.getElementById('roiGain20'), document.getElementById('roiAnnual20'), val, 20000);
+    updateCard(document.getElementById('roiGain50'), document.getElementById('roiAnnual50'), val, 50000);
+    updateCard(document.getElementById('roiGain100'), document.getElementById('roiAnnual100'), val, 100000);
+  }
+
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
+
+<script>
+// Disclaimer accordion
+(function() {
+  const toggle = document.getElementById('disclaimerToggle');
+  const body = document.getElementById('disclaimerBody');
+  if (!toggle || !body) return;
+  function handleToggle() {
+    const open = body.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  }
+  toggle.addEventListener('click', handleToggle);
+  toggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleToggle(); } });
+})();
+</script>
+
+<script>
+// "Know before you join" typewriter
+(function() {
+  const el = document.getElementById('knowLabel');
+  if (!el) return;
+  const text = 'Know before you join.';
+  let typed = false;
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting && !typed) {
+        typed = true;
+        el.classList.add('typing');
+        let i = 0;
+        const go = () => {
+          el.textContent = text.slice(0, i);
+          i++;
+          if (i <= text.length) setTimeout(go, i === 1 ? 250 : 55);
+          else el.classList.replace('typing', 'done');
+        };
+        setTimeout(go, 200);
+        obs.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  obs.observe(el);
+})();
+</script>
+
+<script>
+// TRANSFORMATION TABS
+(function() {
+  const tabs = document.querySelectorAll('.transform-tab-btn');
+  const panels = document.querySelectorAll('.transform-panel');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      const target = document.getElementById(tab.dataset.tab);
+      if (target) target.classList.add('active');
+    });
+  });
+})();
+</script>
+
+<!-- DESKTOP URGENCY BAR -->
+<div id="desktopUrgencyBar" style="position:fixed;bottom:0;left:0;right:0;z-index:9996;">
+  <div class="desktop-urgency-inner" style="position:relative;">
+    <span class="desktop-urgency-dot"></span>
+    <span class="desktop-urgency-text">Join our <strong>next live call</strong> — doors are open now</span>
+    <a href="#pricing" class="desktop-urgency-cta">Join WMHQ →</a>
+    <button class="desktop-urgency-close" id="desktopUrgencyClose">✕</button>
+  </div>
+</div>
+
+<!-- STICKY MOBILE CTA BAR -->
+<div id="mobileStickyBar">
+  <div class="mobile-sticky-inner">
+    <span class="mobile-sticky-label">Join WMHQ from $400/month</span>
+    <a href="#pricing" class="mobile-sticky-cta">Join Now</a>
+    <button class="mobile-sticky-close" id="mobileStickyClose">✕</button>
+  </div>
+</div>
+
+<script>
+(function() {
+  const bar = document.getElementById('mobileStickyBar');
+  const closeBtn = document.getElementById('mobileStickyClose');
+  if (bar && closeBtn) {
+    let dismissed = false;
+    closeBtn.addEventListener('click', () => { dismissed = true; bar.style.display = 'none'; });
+    const pricing = document.getElementById('pricing');
+    if (pricing) {
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (!dismissed) bar.style.opacity = e.isIntersecting ? '0' : '1'; });
+      }, { threshold: 0.1 });
+      obs.observe(pricing);
+    }
+  }
+  const dBar = document.getElementById('desktopUrgencyBar');
+  const dClose = document.getElementById('desktopUrgencyClose');
+  if (dBar && dClose) {
+    dClose.addEventListener('click', () => { dBar.style.display = 'none'; });
+    const pricing = document.getElementById('pricing');
+    if (pricing) {
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { dBar.style.opacity = e.isIntersecting ? '0' : '1'; dBar.style.pointerEvents = e.isIntersecting ? 'none' : 'auto'; });
+      }, { threshold: 0.1 });
+      obs.observe(pricing);
+    }
+  }
+})();
+</script>
+
+</body>
+</html>
