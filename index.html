@@ -2819,7 +2819,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
   .testimonial-img { border-radius: 12px; }
 }
 
-/* KAJABI FORM OVERRIDE — exit popup */
+/* KAJABI FORM OVERRIDE, exit popup */
 .exit-kajabi-wrap .kajabi-form,
 .exit-kajabi-wrap form {
   background: transparent !important;
@@ -3027,6 +3027,44 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
   .for-col { padding: 20px 16px; }
   .transform-result-card { padding: 18px 16px; }
 }
+
+/* QUOTE BREAK SECTION */
+.quote-break-section {
+  background: #1a0a0a;
+  padding: 80px 40px;
+  text-align: center;
+}
+.quote-break-text {
+  font-size: clamp(24px, 3.5vw, 44px);
+  font-weight: 800;
+  color: rgba(241,235,235,0.5);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  max-width: 780px;
+  margin: 0 auto;
+  font-family: 'DM Sans', sans-serif;
+}
+.quote-break-text span {
+  color: var(--stone);
+}
+
+/* FOR COL CLOSER */
+.for-col-closer {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(241,235,235,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.for-col-closer p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #F2C6D0;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
 </style>
 </head>
 <body>
@@ -3063,21 +3101,29 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
   <div class="container">
     <div class="problem-split">
       <div class="problem-left">
-        <h2 class="problem-left-heading">If your revenue is still inconsistent after all the courses, content, and hard work, <em>the answer isn't just strategy. It's your subconscious.</em> Woman Mastery HQ Membership fixes both.</h2>
+        <h2 class="problem-left-heading">We look at the business <em>underneath</em> the business.
+        <span style="display:block;margin-top:16px;font-size:clamp(15px,1.8vw,20px);font-weight:500;color:var(--ink-light);line-height:1.6;">The messaging, the content, the offer, the buyer psychology, the sales pathway, the visibility pattern, the subconscious resistance, and the actual constraint that is stopping momentum from compounding.</span></h2>
       </div>
       <div class="problem-right">
         <p class="problem-right-label">WMHQ is for you as an online business owner who wants to:</p>
         <ul class="problem-list">
-          <li>Say what you do in a way that makes people want it.</li>
-          <li>Build a brand presence that stays top of mind.</li>
-          <li>Turn attention into steady, recurring sales.</li>
-          <li>Stop sabotaging when things start working.</li>
+          <li>Say what you do in a way that creates a clear reason to care, trust, and buy.</li>
+          <li>Stop guessing what to fix and start seeing exactly what is blocking sales.</li>
+          <li>Build a business that compounds instead of resetting every 30 days.</li>
+          <li>Stop being the constraint in your own growth.</li>
         </ul>
       </div>
     </div>
     <div style="text-align:center; margin-top:48px;">
       <a href="#pricing" class="btn-primary" style="background:#3D0A10;color:var(--stone);">Join WMHQ Membership</a>
     </div>
+  </div>
+</section>
+
+<!-- QUOTE BREAK -->
+<section class="quote-break-section">
+  <div class="container">
+    <p class="quote-break-text">The next level is not always about doing more.<br><span>Sometimes it is about knowing what to stop fixing and becoming the woman who can hold success without needing to rebuild herself every time it arrives.</span></p>
   </div>
 </section>
 
@@ -3124,7 +3170,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
       <div class="inside-card-simple">
         <span class="inside-card-tag">Members Only</span>
         <h3 class="inside-card-title">WMHQ Personal Portal</h3>
-        <p class="inside-card-desc">Your private app where your strategy, audits, tracking, and progress <strong>live in one place.</strong> Submit work, review your patterns, track your sales and content, and keep your next moves organised. Think of it as your business HQ — not a course dashboard, a working tool. Because <strong>if you can't see what's happening in your business, you can't scale it.</strong></p>
+        <p class="inside-card-desc">Your private app where your strategy, audits, tracking, and progress <strong>live in one place.</strong> Submit work, review your patterns, track your sales and content, and keep your next moves organised. Think of it as your business HQ, not a course dashboard, a working tool. Because <strong>if you can't see what's happening in your business, you can't scale it.</strong></p>
       </div>
       <div class="inside-card-simple">
         <span class="inside-card-tag">Monthly · Live</span>
@@ -3139,7 +3185,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
       <div class="inside-card-simple">
         <span class="inside-card-tag">Always Growing</span>
         <h3 class="inside-card-title">WMHQ Vault</h3>
-        <p class="inside-card-desc">Trainings, worksheets, templates, frameworks, prompts, meditations, and implementation tools across messaging, sales, visibility, offer refinement, identity work, and nervous system capacity. <strong>Not more information — the exact tools for the specific edge you're hitting.</strong></p>
+        <p class="inside-card-desc">Trainings, worksheets, templates, frameworks, prompts, meditations, and implementation tools across messaging, sales, visibility, offer refinement, identity work, and nervous system capacity. <strong>Not more information, the exact tools for the specific edge you're hitting.</strong></p>
       </div>
     </div>
     <div style="text-align:center;padding:40px 0 0;">
@@ -3181,7 +3227,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
       </div>
       <div class="testimonial-card">
         <span class="testimonial-result">Hitting KPIs Consistently</span>
-        <p class="testimonial-quote">"I'm finally hitting my KPIs ($$ and bookings) over 2–3 weeks now, which feels insane! I'm feeling really really good about everything. But I feel a bit of discomfort in this, so I'm going to hit up the subconscious modules. The feeling is like anticipating the drop of a rollercoaster — like that feeling!"</p>
+        <p class="testimonial-quote">"I'm finally hitting my KPIs ($$ and bookings) over 2–3 weeks now, which feels insane! I'm feeling really really good about everything. But I feel a bit of discomfort in this, so I'm going to hit up the subconscious modules. The feeling is like anticipating the drop of a rollercoaster, like that feeling!"</p>
         <p class="testimonial-author">J · Skin Boutique Owner</p>
       </div>
     </div>
@@ -3205,13 +3251,19 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
           <span class="for-col-tag for-col-tag-yes">✓ This is for you</span>
         </div>
         <ul class="for-list">
-          <li><span class="for-icon yes">✓</span><div><strong>You're already making money — but income still feels like a mood swing.</strong><p>You've had $20K–$30K+ months, but can't predictably repeat them.</p></div></li>
-          <li><span class="for-icon yes">✓</span><div><strong>Your content gets attention. But attention isn't converting.</strong><p>Saves, DMs, "this hit" — but not consistent buyers.</p></div></li>
+          <li><span class="for-icon yes">✓</span><div><strong>You're already making money, but income still feels like a mood swing.</strong><p>You've had $20K–$30K+ months, but can't predictably repeat them.</p></div></li>
+          <li><span class="for-icon yes">✓</span><div><strong>Your content gets attention. But attention isn't converting.</strong><p>Saves, DMs, "this hit", but not consistent buyers.</p></div></li>
           <li><span class="for-icon yes">✓</span><div><strong>You have the offer and the proof. Every launch still feels like a battle.</strong><p>Dragging people across the line with your bare hands.</p></div></li>
-          <li><span class="for-icon yes">✓</span><div><strong>Visibility is the next move — but your nervous system disagrees.</strong><p>The moment you think about being louder, your body starts saying no.</p></div></li>
+          <li><span class="for-icon yes">✓</span><div><strong>Visibility is the next move, but your nervous system disagrees.</strong><p>The moment you think about being louder, your body starts saying no.</p></div></li>
           <li><span class="for-icon yes">✓</span><div><strong>You hit a big month, then sabotage it.</strong><p>Get sick. Go quiet. Lower your prices. Rework the strategy.</p></div></li>
-          <li><span class="for-icon yes">✓</span><div><strong>You don't need another download. You need the room.</strong><p>Strategy, systems, sales support, and identity work — together.</p></div></li>
+          <li><span class="for-icon yes">✓</span><div><strong>You don't need another download. You need the room.</strong><p>Strategy, systems, sales support, and identity work, together.</p></div></li>
         </ul>
+        <div class="for-col-closer">
+          <p>Not more generic advice.</p>
+          <p>Not another content prompt pack.</p>
+          <p>Not another strategy you save and never use.</p>
+          <p>A space where your business gets looked at properly.</p>
+        </div>
       </div>
 
       <div class="for-col for-col-no">
@@ -3262,7 +3314,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
       <span class="vip-toggle-label vip-label-right">I want VIP <span class="vip-badge">✦ Upgrade</span></span>
     </div>
 
-    <p class="pricing-anchor">Most women spend $3K–$10K on courses that don't address the real problem. WMHQ Membership is $400/month.</p>
+    <p class="pricing-anchor">Most women spend $3K–$10K searching for advice hyper-specific to their niche, their offer, their audience, their platform. The problem was never niche-specific. WMHQ Membership is $400/month.</p>
 
     <div class="pricing-cards">
       <!-- 6 MONTH CARD -->
@@ -3359,6 +3411,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
         <p class="section-eyebrow">Who Built This</p>
         <h2>Hi, I'm Jess.</h2>
 
+        <p style="font-size:clamp(17px,2vw,22px);font-weight:800;color:var(--stone);line-height:1.4;">Every business needs someone who can see what the founder is too close to see.</p>
         <p>I built WMHQ because I watched women, including myself, hit a ceiling strategy couldn't fix.</p>
         <p>I had the offer. The audience. The clients. The proof. The business made money. The reputation grew. The buyers kept coming.</p>
         <p>And still, I knew I was operating smaller than my capacity.</p>
@@ -4018,7 +4071,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
     },
     {
       q: "Do I need to be making a certain amount to join?",
-      a: "WMHQ is best suited for female online business owners already making $5K–$35K months inconsistently, with a proven offer, real client results, and a desire to scale.\n\nIf you're in a full-time job and building your business on the side, you can still join — but only if you're serious about becoming the founder and can dedicate 2–4 hours per week to implementation.\n\nIf you're pre-revenue, still validating your first offer, or don't currently have the time or capacity to use the space properly, this probably isn't the right fit yet."
+      a: "WMHQ is best suited for female online business owners already making $5K–$35K months inconsistently, with a proven offer, real client results, and a desire to scale.\n\nIf you're in a full-time job and building your business on the side, you can still join, but only if you're serious about becoming the founder and can dedicate 2–4 hours per week to implementation.\n\nIf you're pre-revenue, still validating your first offer, or don't currently have the time or capacity to use the space properly, this probably isn't the right fit yet."
     },
     {
       q: "What if I can't attend every live call?",
@@ -4038,7 +4091,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
     },
     {
       q: "Will this help me with content?",
-      a: "Yes. Content is one of the core pillars inside WMHQ. You'll work on messaging, positioning, content strategy, buyer psychology, visibility, hooks, audits, and building content that actually leads people into a buying decision — not just content that gets saved and praised."
+      a: "Yes. Content is one of the core pillars inside WMHQ. You'll work on messaging, positioning, content strategy, buyer psychology, visibility, hooks, audits, and building content that actually leads people into a buying decision, not just content that gets saved and praised."
     },
     {
       q: "Will this help me make more sales?",
@@ -4046,11 +4099,11 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
     },
     {
       q: "What if I'm already successful but inconsistent?",
-      a: "That's exactly who WMHQ is for. You may already have strong months, testimonials, a proven offer, and an audience — but your income still swings because the backend, content, sales process, and internal capacity aren't yet built for consistency. WMHQ helps you turn spikes into a baseline."
+      a: "That's exactly who WMHQ is for. You may already have strong months, testimonials, a proven offer, and an audience, but your income still swings because the backend, content, sales process, and internal capacity aren't yet built for consistency. WMHQ helps you turn spikes into a baseline."
     },
     {
       q: "Is WMHQ business coaching or mindset coaching?",
-      a: "Both. WMHQ combines business strategy, content, sales, messaging, revenue planning, subconscious identity work, and nervous system capacity. Because inconsistent income is rarely just a strategy problem — it's usually a strategy, identity, visibility, and execution problem happening at the same time."
+      a: "Both. WMHQ combines business strategy, content, sales, messaging, revenue planning, subconscious identity work, and nervous system capacity. Because inconsistent income is rarely just a strategy problem, it's usually a strategy, identity, visibility, and execution problem happening at the same time."
     }
   ];
 
@@ -4175,7 +4228,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
     overlay.classList.remove('active');
   }
 
-  // Desktop: exit intent — mouse leaves toward top of viewport
+  // Desktop: exit intent, mouse leaves toward top of viewport
   document.addEventListener('mouseleave', (e) => {
     if (e.clientY <= 10) showPopup();
   });
@@ -4274,7 +4327,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
         if (sub) sub.textContent = 'Paused · tap to resume';
       }
     } else {
-      // No audio yet — show placeholder message
+      // No audio yet, show placeholder message
       if (sub) {
         sub.textContent = 'Audio coming soon ♡';
         setTimeout(() => { sub.textContent = '▶ 30 sec · you've scrolled this far, just press play'; }, 2200);
@@ -4415,7 +4468,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
       return;
     }
     const pageUrl = 'https://womanmasteryhq.com';
-    const subject = encodeURIComponent('WMHQ Membership — come back when you\'re ready');
+    const subject = encodeURIComponent('WMHQ Membership, come back when you\'re ready');
     const greeting = name ? 'Hi ' + name + ',\n\n' : '';
     const body = encodeURIComponent(greeting + 'You asked me to send you this.\n\nWoman Mastery HQ Membership:\n' + pageUrl + '\n\nDoors are open. Come back when you\'re ready.');
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
@@ -4526,7 +4579,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
 <div id="desktopUrgencyBar" style="position:fixed;bottom:0;left:0;right:0;z-index:9996;">
   <div class="desktop-urgency-inner" style="position:relative;">
     <span class="desktop-urgency-dot"></span>
-    <span class="desktop-urgency-text">Join our <strong>next live call</strong> — doors are open now</span>
+    <span class="desktop-urgency-text">Join our <strong>next live call</strong>, doors are open now</span>
     <a href="#pricing" class="desktop-urgency-cta">Join WMHQ →</a>
     <button class="desktop-urgency-close" id="desktopUrgencyClose">✕</button>
   </div>
