@@ -2770,14 +2770,14 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
 
 /* PRICE ANCHOR */
 .pricing-anchor {
-  font-size: 13px;
-  color: var(--muted);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-light);
   text-align: center;
   max-width: 480px;
   margin: 0 auto 28px;
   line-height: 1.6;
   font-family: 'DM Sans', sans-serif;
-  opacity: 0.7;
 }
 
 /* INSIDE SIMPLE CARDS */
@@ -3314,7 +3314,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
       <span class="vip-toggle-label vip-label-right">I want VIP <span class="vip-badge">✦ Upgrade</span></span>
     </div>
 
-    <p class="pricing-anchor">Most women spend $3K–$10K searching for advice hyper-specific to their niche, their offer, their audience, their platform. The problem was never niche-specific. WMHQ Membership is $400/month.</p>
+    <p class="pricing-anchor">Most women spend $3K–$10K searching for advice that gives you more things to do. WMHQ Membership tells you what matters first from as little as $100 a week.</p>
 
     <div class="pricing-cards">
       <!-- 6 MONTH CARD -->
@@ -3739,7 +3739,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
           }
         }
 
-        if (id === '6') savingEl.textContent = nowVip ? 'Save $2,400 vs VIP 12 months' : 'Total $2,700 AUD';
+        if (id === '6') savingEl.textContent = nowVip ? 'Short-Term Investment' : 'Total $2,700 AUD';
         if (id === '12') savingEl.textContent = nowVip ? 'Save $2,400 vs VIP 6 months' : 'Save $600 vs 6 months';
 
         card.classList.toggle('vip-active', nowVip);
