@@ -127,11 +127,24 @@ section { width: 100%; }
 /* HERO */
 .hero {
   background: var(--dark-red);
+  background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147575052/images/b24681a-0e6c-58ea-26a4-da32433ac0_Kajabi_Website_3_.png');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
   padding: 100px 40px 80px;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 4, 4, 0.58);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero > * { position: relative; z-index: 1; }
 .hero::before {
   content: '';
   position: absolute;
@@ -1429,6 +1442,7 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
   .guarantee-icon-line { display: none; }
   .value-you-pay { flex-direction: column; gap: 8px; text-align: center; }
   .transform-section { background-attachment: scroll; }
+  .hero { background-attachment: scroll; background-position: center center; }
 }
 /* CAROUSEL */
 .carousel-section {
