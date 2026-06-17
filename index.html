@@ -3458,6 +3458,326 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
   .transform-result-card { padding: 16px 14px; }
   .bio-content h2 { font-size: 24px; }
 }
+
+
+
+/* OUTCOMES NUMBERED */
+.outcomes-numbered {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(241,235,235,0.06);
+  border: 1px solid rgba(241,235,235,0.06);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+.outcome-item {
+  background: #1a0a0a;
+  padding: 32px 28px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.2s;
+}
+.outcome-item:hover { background: #221010; }
+.outcome-num {
+  display: block;
+  font-size: 72px;
+  font-weight: 900;
+  font-family: 'DM Sans', sans-serif;
+  color: rgba(242,198,208,0.08);
+  line-height: 1;
+  margin-bottom: 12px;
+  letter-spacing: -0.04em;
+  user-select: none;
+}
+.outcome-text {
+  font-size: 14px;
+  color: rgba(241,235,235,0.75);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 900px) {
+  .outcomes-numbered { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .outcomes-section { padding: 52px 20px; }
+  .outcomes-title { font-size: 20px; margin-bottom: 28px; }
+  .outcomes-numbered { grid-template-columns: 1fr; border-radius: 12px; margin-bottom: 32px; }
+  .outcome-item { padding: 24px 20px 20px; }
+  .outcome-num { font-size: 52px; margin-bottom: 8px; }
+  .outcome-text { font-size: 13px; }
+  .outcomes-close { font-size: 13px; }
+}
+
+/* OUTCOMES SECTION — REDESIGNED */
+.outcomes-section {
+  background: var(--satin);
+  padding: 0;
+}
+.outcomes-intro {
+  background: var(--satin);
+  padding: 80px 40px 48px;
+  text-align: center;
+}
+.outcomes-title {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 900;
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.outcomes-grid-wrap {
+  background: #1a0a0a;
+  padding: 60px 40px;
+}
+.outcomes-numbered {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(241,235,235,0.06);
+  border: 1px solid rgba(241,235,235,0.06);
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.outcome-item {
+  background: #1a0a0a;
+  padding: 32px 28px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.2s;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease, background 0.2s;
+}
+.outcome-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.outcome-item:nth-child(even) { background: #221010; }
+.outcome-item:hover { background: #221010; }
+.outcome-item:nth-child(even):hover { background: #1a0a0a; }
+.outcome-num {
+  display: block;
+  font-size: 72px;
+  font-weight: 900;
+  font-family: 'DM Sans', sans-serif;
+  color: rgba(242,198,208,0.22);
+  line-height: 1;
+  margin-bottom: 12px;
+  letter-spacing: -0.04em;
+  user-select: none;
+}
+.outcome-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(241,235,235,0.85);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.outcomes-close-wrap {
+  background: var(--satin);
+  padding: 52px 40px 60px;
+  text-align: center;
+}
+.outcomes-close {
+  font-size: clamp(18px, 2.5vw, 26px);
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.5;
+  font-family: 'DM Sans', sans-serif;
+  max-width: 680px;
+  margin: 0 auto 36px;
+}
+
+@media (max-width: 900px) {
+  .outcomes-numbered { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .outcomes-intro { padding: 52px 20px 32px; }
+  .outcomes-title { font-size: clamp(24px, 7vw, 36px); }
+  .outcomes-grid-wrap { padding: 40px 16px; }
+  .outcomes-numbered { grid-template-columns: 1fr; border-radius: 12px; }
+  .outcome-item { padding: 24px 20px 20px; }
+  .outcome-num { font-size: 52px; margin-bottom: 8px; }
+  .outcome-text { font-size: 13px; }
+  .outcomes-close-wrap { padding: 40px 20px 48px; }
+  .outcomes-close { font-size: clamp(16px, 5vw, 22px); }
+}
+
+/* OUTCOMES MOBILE OPTIMISATION */
+@media (max-width: 768px) {
+  .outcomes-intro { padding: 48px 20px 32px; }
+  .outcomes-title { 
+    font-size: clamp(24px, 7vw, 36px); 
+    text-wrap: balance;
+    br { display: none; }
+  }
+  .outcomes-grid-wrap { padding: 32px 16px; }
+  .outcomes-numbered { 
+    grid-template-columns: 1fr; 
+    border-radius: 12px;
+    gap: 0;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .outcome-item {
+    background: #1a0a0a !important;
+    padding: 20px 20px 18px 20px;
+    border-left: 3px solid rgba(242,198,208,0.15);
+    border-radius: 0;
+  }
+  .outcome-item:nth-child(even) {
+    background: #1a0a0a !important;
+    border-left-color: rgba(242,198,208,0.35);
+  }
+  .outcome-item:hover, 
+  .outcome-item:nth-child(even):hover { 
+    background: #221010 !important; 
+  }
+  .outcome-num { 
+    font-size: 36px; 
+    margin-bottom: 6px; 
+    line-height: 1;
+  }
+  .outcome-text { font-size: 13px; line-height: 1.65; }
+  .outcomes-close-wrap { padding: 36px 20px 44px; }
+  .outcomes-close { font-size: clamp(16px, 5vw, 20px); text-align: left; margin-bottom: 28px; }
+  .outcomes-close-wrap .btn-primary { width: 100%; text-align: center; box-sizing: border-box; }
+}
+
+@media (max-width: 390px) {
+  .outcomes-title { font-size: 22px; }
+  .outcome-num { font-size: 30px; }
+  .outcome-text { font-size: 12px; }
+}
+
+/* Desktop BR suppression on mobile */
+@media (max-width: 768px) {
+  br.desktop-br { display: none; }
+}
+
+/* TESTIMONIAL SPLIT SECTION */
+.tsplit-section {
+  background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147575052/images/b24681a-0e6c-58ea-26a4-da32433ac0_Kajabi_Website_3_.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.tsplit-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(20,4,4,0.62);
+  z-index: 0;
+}
+.tsplit-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 680px;
+}
+.tsplit-cards {
+  padding: 60px 40px 60px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.tsplit-card {
+  background: rgba(250,246,240,0.06);
+  border: 1px solid rgba(241,235,235,0.1);
+  border-radius: 14px;
+  padding: 18px 20px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tsplit-card .testimonial-result {
+  background: rgba(242,198,208,0.15);
+  color: #F2C6D0;
+}
+.tsplit-card .testimonial-author {
+  color: rgba(241,235,235,0.45);
+  margin-top: 0;
+}
+.tsplit-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+.tsplit-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 40px 40px 20px;
+  overflow: hidden;
+}
+.tsplit-photo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .tsplit-inner { grid-template-columns: 1fr; min-height: auto; }
+  .tsplit-section { background-attachment: scroll; }
+  .tsplit-cards { padding: 40px 20px; gap: 16px; }
+  .tsplit-photo { padding: 0 20px 40px; max-height: none; }
+  .tsplit-photo-img { border-radius: 10px; }
+}
+@media (max-width: 768px) {
+  .tsplit-cards { padding: 32px 16px; }
+  .tsplit-card { padding: 14px 16px 12px; }
+  .tsplit-photo { max-height: 360px; }
+}
+
+.tsplit-quote {
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(241,235,235,0.8);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* FULL WIDTH TESTIMONIAL IMAGE */
+.testimonial-full-img-wrap {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding: 0;
+}
+.testimonial-full-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+@media (max-width: 768px) {
+  .testimonial-full-img { border-radius: 10px; }
+  .testimonial-full-img-wrap { margin-top: 14px; }
+}
 </style>
 </head>
 <body>
@@ -3513,11 +3833,62 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
   </div>
 </section>
 
-<!-- QUOTE BREAK -->
-<section class="quote-break-section">
-  <div class="container">
-    <p class="quote-break-text">The next level is not always about doing more.<br><span>Sometimes it is about knowing what to stop fixing and becoming the woman who can hold success without needing to rebuild herself every time it arrives.</span></p>
+<!-- OUTCOMES SECTION -->
+<section class="outcomes-section">
+
+  <!-- TITLE PART — light background -->
+  <div class="outcomes-intro">
+    <p class="outcomes-title">When your business is built to hold more,<br class="desktop-br"> <em>every season gets easier.</em></p>
   </div>
+
+  <!-- GRID PART — dark background -->
+  <div class="outcomes-grid-wrap">
+    <div class="outcomes-numbered">
+      <div class="outcome-item">
+        <span class="outcome-num">01</span>
+        <p class="outcome-text">Know why revenue is inconsistent without spiraling into a rebrand, a new offer, or another "I need to burn it all down" season.</p>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-num">02</span>
+        <p class="outcome-text">Create demand every week of the month without relying on launch hype, forced urgency, or disappearing until the next big push.</p>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-num">03</span>
+        <p class="outcome-text">Turn attention into qualified buyers so your content does more than get praise — it creates trust, desire, and decisions.</p>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-num">04</span>
+        <p class="outcome-text">Have people arrive already convinced because your message, offer, and sales page answer the questions they were too hesitant to ask.</p>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-num">05</span>
+        <p class="outcome-text">Sell your core offers on repeat instead of constantly reinventing the thing that would have worked if you had stayed with it long enough.</p>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-num">06</span>
+        <p class="outcome-text">Raise your prices with evidence because the positioning, promise, proof, and delivery can actually support the number.</p>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-num">07</span>
+        <p class="outcome-text">Stop making random changes when sales slow down and know exactly whether the issue is the offer, message, traffic, trust, sales page, or follow-up.</p>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-num">08</span>
+        <p class="outcome-text">Hold bigger months without contracting afterward so higher revenue stops feeling like a lucky spike and starts becoming your new baseline.</p>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-num">09</span>
+        <p class="outcome-text">Build a buyer journey that compounds where people do not just buy once — they stay, upgrade, refer, and become proof of the work.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSE PART — light background -->
+  <div class="outcomes-close-wrap">
+    <p class="outcomes-close">WMHQ helps you refine the strategy, install the systems, and shift the subconscious patterns required to hold $20K+ months steady, whether you're launching, resting, or pivoting.</p>
+    <a href="#pricing" class="btn-primary" style="background:#3D0A10;color:#f1ebeb;">Make $20K Months My Baseline</a>
+  </div>
+
 </section>
 
 <!-- TRANSFORMATION TIMELINE -->
@@ -3528,19 +3899,19 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
     <div class="transform-result-cards">
       <div class="transform-result-card">
         <span class="transform-result-card-tag">Months 1–3</span>
-        <p class="transform-result-card-text">Most founders are fixing the wrong layer. In your first 90 days we find the actual constraint, the messaging gap, the sales block, or the subconscious pattern making you go quiet every time momentum builds. We work on both layers at the same time. That is why the shift sticks.</p>
+        <p class="transform-result-card-text">We find the real reason your revenue has not become consistent yet. In your first 90 days, we look at the full picture: your offer, your message, your content, your sales process, your buyer journey, and the internal pattern that shows up when more money, more visibility, or more demand starts to feel close. We find what is actually costing you sales, refine the pieces that need to move, and begin the deeper work that lets the shift hold.</p>
       </div>
       <div class="transform-result-card">
         <span class="transform-result-card-tag">Months 3–6</span>
-        <p class="transform-result-card-text">You build the structure that moves people from content to trust to desire to decision. But you also do the internal work that lets you hold it. Because a clean sales system run by a nervous system wired for $20K+ months will always self-sabotage. Revenue stops depending on your best week.</p>
+        <p class="transform-result-card-text">You build the structure that lets more demand feel safe. This is where your business starts becoming less dependent on your mood, your capacity, or your best week of confidence. Your message gets sharper. Your sales ecosystem gets cleaner. Your content starts moving people from attention to trust to desire to decision. At the same time, we work with the inner resistance that can make being seen, chosen, paid, referred, or fully backed feel unfamiliar.</p>
       </div>
       <div class="transform-result-card">
         <span class="transform-result-card-tag">Months 6–12</span>
-        <p class="transform-result-card-text">This is where both layers start working together. The strategy is clean. The subconscious resistance is lower. You are no longer the constraint in your own business. High-income months stop feeling like lucky spikes and start feeling like evidence.</p>
+        <p class="transform-result-card-text">Higher revenue becomes something you can sustain. By this stage, the external strategy and internal identity are no longer pulling in different directions. You know what creates demand. You know where sales slow down. You know what to refine without rebuilding everything from scratch. High-income months stop feeling like something you have to recover from and start becoming evidence of the business, identity, and capacity you have built.</p>
       </div>
     </div>
     <div style="text-align:center;padding:40px 0 0;">
-      <a href="#pricing" class="btn-primary" style="background:#F2C6D0;color:#3D0A10;">Join WMHQ Membership</a>
+      <a href="#pricing" class="btn-primary" style="background:#F2C6D0;color:#3D0A10;">Begin Month One</a>
     </div>
   </div>
 </section>
@@ -3877,6 +4248,9 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
     <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147575052/images/3ed1fd1-b652-73e0-811e-ea1b683bb38_Testimonials_1_.png" alt="WMHQ Member Testimonial" class="testimonial-img">
     <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147575052/images/ce4acc-5dbc-5745-65ac-b3d4db45e10_130.png" alt="WMHQ Member Testimonial" class="testimonial-img">
   </div>
+  <div class="testimonial-full-img-wrap">
+    <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147575052/images/fa221c-455-218a-5872-eee2500503fe_Kajabi_Website_3_.png" alt="Inside WMHQ" class="testimonial-full-img">
+  </div>
 </section>
 
 <script>
@@ -4193,6 +4567,24 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
       const open = mtmBody.classList.toggle('open');
       mtmToggle.setAttribute('aria-expanded', open);
     });
+  }
+
+  // Outcome items fade in on scroll
+  const outcomeItems = document.querySelectorAll('.outcome-item');
+  if (outcomeItems.length && 'IntersectionObserver' in window) {
+    const isMobile = window.innerWidth <= 768;
+    const stagger = isMobile ? 40 : 80;
+    const outcomeObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * stagger);
+          outcomeObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    outcomeItems.forEach(item => outcomeObs.observe(item));
+  } else {
+    outcomeItems.forEach(item => item.classList.add('visible'));
   }
 
   // Worked with accordion
