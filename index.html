@@ -3778,6 +3778,57 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
   .testimonial-full-img { border-radius: 10px; }
   .testimonial-full-img-wrap { margin-top: 14px; }
 }
+
+/* CHEMISTRY CHECK */
+.chemistry-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto 36px;
+  padding: 28px 32px;
+  background: rgba(242,198,208,0.08);
+  border: 1px solid rgba(242,198,208,0.2);
+  border-radius: 16px;
+  max-width: 480px;
+  text-align: center;
+}
+.chemistry-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+}
+.chemistry-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink);
+  color: var(--stone);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.2s, transform 0.15s;
+}
+.chemistry-btn:hover { background: #3D0A10; transform: translateY(-1px); }
+.chemistry-sub {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  opacity: 0.7;
+}
+@media (max-width: 768px) {
+  .chemistry-wrap { padding: 22px 20px; margin-bottom: 28px; }
+  .chemistry-text { font-size: 14px; }
+  .chemistry-btn { font-size: 10px; padding: 13px 22px; }
+}
 </style>
 </head>
 <body>
@@ -4070,6 +4121,11 @@ footer a { color: rgba(241,235,235,0.4); text-decoration: none; }
     </div>
 
     <p class="pricing-anchor">Most women spend $3K–$10K searching for advice that gives you more things to do. WMHQ Membership tells you what matters at $400/month. That's $14/day to fix the actual problem.</p>
+
+    <div class="chemistry-wrap">
+      <p class="chemistry-text">Want to do a 15-min Chemistry Check?</p>
+      <a href="https://www.jessicapinili.com/wmhq-chemistry-check-quiz" class="chemistry-btn" id="chemistryBtn">Book Here <span class="chemistry-sub">(it's complimentary)</span></a>
+    </div>
 
     <div class="pricing-cards">
 
